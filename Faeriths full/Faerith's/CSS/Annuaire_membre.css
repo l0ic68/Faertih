@@ -1,0 +1,382 @@
+#Fleche {
+  position: absolute;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+#Pseudo_top {
+  border-right: solid #313131 1px;
+  width: 20%;
+}
+
+#Equipe_top {
+  border-left: solid #313131 1px;
+  width: 20%;
+}
+
+#Categorie_top, #Contact_top {
+  width: 15%;
+}
+
+#ID_Discord_top {
+  width: 30%;
+}
+
+#Categorie_top, #Contact_top, #ID_Discord_top {
+  border-right: solid #313131 1px;
+  border-left: solid #313131 1px;
+}
+
+#Pseudo_top, #Categorie_top, #Contact_top, #ID_Discord_top, #Equipe_top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.2em;
+  background-color: #6E0505;
+  text-transform: uppercase;
+  font-family: '33535gillsansmt' !important;
+}
+
+.Milieu {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #212121;
+  width: 75%;
+  color: white;
+  min-height: 100vh;
+}
+
+.Recherche {
+  height: 2.5em;
+  font-family: Arial;
+  background-color: #212121;
+  color: white;
+  border: none;
+}
+
+.Annuaire_membre_data {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #313131;
+  font-family: Arial;
+}
+
+.Pseudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid #313131 1px;
+  width: 20%;
+}
+
+.Categorie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid #313131 1px;
+  border-left: solid #313131 1px;
+  width: 15%;
+}
+
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid #313131 1px;
+  border-left: solid #313131 1px;
+  width: 15%;
+}
+
+.ID_Discord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid #313131 1px;
+  border-left: solid #313131 1px;
+  width: 30%;
+}
+
+.Img_profil {
+  width: 20%;
+  border-radius: 20%;
+  margin-right: 2%;
+}
+
+.On {
+  width: 15%;
+  border-radius: 100%;
+  margin-right: 2%;
+}
+
+.Equipe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-left: solid #313131 1px;
+  width: 20%;
+}
+
+.Img_Equipe {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  margin: 1%;
+}
+
+@media screen and (max-width: 1280px)
+{
+  #Fleche {
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+
+  #Pseudo {
+    font-size: 1em;
+  }
+
+  #Categorie {
+    font-size: 1em;
+  }
+
+  #Contact {
+    font-size: 1em;
+  }
+
+  #ID_Discord {
+    font-size: 1em;
+  }
+
+  .Milieu {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .Recherche {
+    margin-bottom: 1em;
+  }
+
+  .Annuaire_membre_data {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+  }
+
+  .Pseudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    width: 15%;
+  }
+
+  .Categorie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    width: 15%;
+  }
+
+  .Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    width: 10%;
+  }
+
+  .ID_Discord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    width: 10%;
+  }
+
+  .Profil_pic {
+    display: flex;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+
+  .Img_profil {
+  width: 60%;
+  }
+
+  .Online {
+    display: flex;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+
+  .On {
+      width: 25%;
+  }
+
+  .Equipe {
+    display: flex;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+  }
+
+  .Img_Equipe {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin: 1%;
+  }
+}
+
+@media screen and (max-width: 1024px)
+{
+  #Fleche {
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+
+  #Pseudo {
+    font-size: 1em;
+  }
+
+  #Categorie {
+    font-size: 1em;
+  }
+
+  #Contact {
+    font-size: 1em;
+  }
+
+  #ID_Discord {
+    font-size: 1em;
+  }
+
+  .Milieu {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .Recherche {
+    margin-bottom: 1em;
+  }
+
+  .Annuaire_membre_data {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+  }
+
+  .Pseudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    width: 40%;
+  }
+
+  .Categorie {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    width: 15%;
+  }
+
+  .Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    width: 20%;
+  }
+
+  .ID_Discord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    width: 15%;
+  }
+
+  .Profil_pic {
+    display: flex;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+
+  .Img_profil {
+  width: 60%;
+  }
+
+  .Online {
+    display: flex;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+
+  .On {
+      width: 25%;
+  }
+
+  .Equipe {
+    display: none;
+    border: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+  }
+
+  .Img_Equipe {
+    display: none;
+    flex-direction: row;
+    width: 20%;
+    margin: 1%;
+  }
+}

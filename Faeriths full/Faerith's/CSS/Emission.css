@@ -1,0 +1,38 @@
+hr {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.Banniere_image {
+  width: 100%;
+  height: auto;
+}
+
+.Information {
+  display: flex;
+  flex-direction: row;
+}
+
+.Info_data {
+  display: flex;
+  flex-direction: column;
+}
+
+.Bouton_notif {
+  display: flex;
+  flex-direction: row;
+}
+
+.Season_ep {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.75em;
+}
+
+.Tiret {
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}

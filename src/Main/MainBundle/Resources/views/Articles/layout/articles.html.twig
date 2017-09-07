@@ -1,0 +1,155 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Article.css') }}"/>
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Index.css') }}"/>
+{% endblock %}
+{% block body %}
+    <section>
+
+        <div id="Article_header">
+            <div id="Article_header_data_main">
+                <a href="{{ path('lecture_article',{id: promoted_first.article.id}) }}">
+                <img src="{{ asset(promoted_first.article.banniere.path) }}" alt="#">
+                </a>
+                <h1>{{ promoted_first.article.titre }}</h1>
+            </div>
+            <div id="Article_header_second">
+                {% for promoted in promoteds %}
+                <div class="Article_header_data">
+                    <a href="{{ path('lecture_article',{id: promoted.article.id}) }}">
+                    <img src="{{ asset(promoted.article.banniere.path) }}" alt="#">
+                    </a>
+                    <h1>{{ promoted.article.titre }}</h1>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <nav id="Article_nav">
+            <p>Articles |</p>
+            <div id="Article_nav_content">
+                <div class="Article_nav_content_data">
+                    <select id="auteur">
+                        <option value="auteur" >Auteur</option>
+                    {% for auteur in auteurs %}
+                        <option value="{{ auteur.username }}">{{ auteur.username }}</option>
+                    {% endfor %}
+
+                    </select>
+                </div>
+                <div class="Article_nav_content_data">
+                    <select id="categorie">
+                        <option value="categorie" >Categorie</option>
+                        {% for categorie in categories %}
+                            <option value="{{ categorie.nom }}">{{ categorie.nom }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="Article_nav_content_data">
+                    <select id="format">
+                        <option value="format" >Format</option>
+                        {% for format in formats %}
+                            <option value="{{ format.nom }}">{{ format.nom }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </nav>
+
+        <div id="slider-bottom-wrap" class="boucle">
+            <ul id="slider-bottom">
+                <li>
+                    <div class="Slider_video">
+                        <div class="Index_video_content">
+                            {% set compte = 0 %}
+                            {% for article in articles %}
+                            <div class="Video_data">
+                                <a href="{{ path('lecture_article',{id: article.id}) }}">
+                                    <img src="{{ asset( article.banniere.path ) }}" alt="#">
+                                </a>
+                                    <h1>{{ article.titre }}</h1>
+                            </div>
+                            {% set compte = compte + 1 %}
+                            {% if compte == 6 %}
+                            {% set compte = 0 %}
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Slider_video">
+                        <div class="Index_video_content">
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+            </ul>
+            <!-- Floating Action Button -->
+
+            <!--controls-->
+            <div class="btns-bottom" id="next-bottom"><i class="fa fa-arrow-right"></i></div>
+            <div class="btns-bottom" id="previous-bottom"><i class="fa fa-arrow-left"></i></div>
+
+            <!--controls-->
+        </div>
+    </section>
+
+    {% block javascripts %}
+        <script type="text/javascript">
+            $(function(){
+                $('#auteur').on('change', function()
+                {
+                    var a = document.getElementById("auteur");
+                    var auteur = a.options[a.selectedIndex].value;
+                    var c = document.getElementById("categorie");
+                    var categorie = c.options[c.selectedIndex].value;
+                    var f = document.getElementById("format");
+                    var format = f.options[f.selectedIndex].value;
+                   Ajax(auteur,categorie,format)
+
+                });
+            });
+            $(function(){
+                $('#categorie').on('change', function()
+                {
+                    var a = document.getElementById("auteur");
+                    var auteur = a.options[a.selectedIndex].value;
+                    var c = document.getElementById("categorie");
+                    var categorie = c.options[c.selectedIndex].value;
+                    var f = document.getElementById("format");
+                    var format = f.options[f.selectedIndex].value;
+                   Ajax(auteur,categorie,format)
+
+                });
+            });
+            $(function(){
+                $('#format').on('change', function()
+                {
+                    var a = document.getElementById("auteur");
+                    var auteur = a.options[a.selectedIndex].value;
+                    var c = document.getElementById("categorie");
+                    var categorie = c.options[c.selectedIndex].value;
+                    var f = document.getElementById("format");
+                    var format = f.options[f.selectedIndex].value;
+                   Ajax(auteur,categorie,format)
+
+                });
+            });
+            function Ajax(auteur,categorie,format)
+            {
+                $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "{{ path('searchArticle') }}",
+                cache: false,
+                data: { auteur: auteur , categorie:categorie, format:format},
+                success:function(response){
+                $('.boucle').replaceWith(response.classifiedList);
+                },
+                error:function(response){
+                console.log(response);
+                }
+                });
+            }
+        </script>
+    {% endblock %}
+{% endblock %}
+

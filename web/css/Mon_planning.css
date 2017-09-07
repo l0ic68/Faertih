@@ -1,0 +1,215 @@
+#Haut {
+  background-color: #212121;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #BA0808;
+}
+
+#Mon_Titre, #Planning_complet {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.3em;
+  padding-top: 0.3em;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+#Mon_Titre {
+  font-family: '33535gillsansmt';
+  color: white;
+}
+
+#Planning_complet a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: '33535gillsansmt';
+}
+
+#Planning_complet i {
+  margin-right: 0.3em;
+}
+
+#Mon_planning_content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-family: '33535gillsansmt';
+}
+
+#Mon_planning_prochaine {
+  width: 33%;
+  border-right: 4px solid #212121;
+}
+
+#Mon_planning_a_regarder {
+  width: 34%;
+}
+
+#Mon_planning_event {
+  width: 33%;
+  border-left: 4px solid #212121;
+  height: 100vh;
+}
+
+#Selection_tard {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #135A87;
+}
+
+#Event_recherche {
+  background-color: #212121;
+  border: 0;
+  font-family: '33535gillsansmt';
+  color: #135A87;
+  font-size: 1.25em;
+  height: 2.5em;
+  width: 100%;
+}
+
+#Texte_all {
+  display: flex;
+  align-items: center;
+  font-family: 'Gameplay';
+  font-size: 1.25em;
+  justify-content: center;
+  background-color: #212121;
+  height: 2.5em;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: white;
+  width: 100%;
+}
+
+.Twitch_icone, .Cross_icone, .Youtube_Play, .Pencil_icone {
+  margin-left: 0.5em;
+  color: #212121;
+}
+
+.Image_profil, .Horaire, .Name_game {
+  margin-left: 1em;
+}
+
+.Horaire, .Name_game {
+  color: white;
+}
+
+.Mon_planning_a_regarder_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Img_regarder, .Contenu {
+  margin-left: 1em;
+  color: white;
+}
+
+.Prochain_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Date {
+  display: flex;
+  align-items: center;
+  font-family: '33535gillsansmt';
+  font-size: 1.25em;
+  justify-content: center;
+  background-color: #313131;
+  height: 2.5em;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: white;
+  width: 100%;
+}
+
+.Selection_icone {
+  display: flex;
+  align-items: center;
+  font-family: '33535gillsansmt';
+  font-size: 1.25em;
+  justify-content: center;
+  background-color: #212121;
+  height: 2.5em;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: white;
+  width: 100%;
+}
+
+.Gros_titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'GAMEPLAY';
+  color: white;
+  background-color: #313131;
+  height: 3em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.Event_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.Event_horaire, .Event_nom {
+  margin-left: 0.5em;
+}
+
+/* Pour les écrans inférieurs à 1280px de large */
+@media screen and (max-width: 1280px)
+{
+  #Mon_planning_content {
+    flex-direction: column;
+  }
+
+  #Mon_planning_prochaine {
+    width: 100%;
+    border-right: 0px solid #212121;
+  }
+
+  #Mon_planning_a_regarder {
+    width: 100%;
+  }
+
+  #Mon_planning_event {
+    width: 100%;
+    border-left: 0px solid #212121;
+    height: 100vh;
+  }
+
+  .Gros_titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'GAMEPLAY';
+    color: white;
+    background-color: #313131;
+    height: 3em;
+    margin-top: 0;
+    border-top: 2px solid #212121;
+    border-bottom: 2px solid #212121;
+  }
+}

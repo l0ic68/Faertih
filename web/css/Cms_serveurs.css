@@ -1,0 +1,47 @@
+#Retour_accueil {
+  text-decoration: none;
+  color: #212121;
+  position: absolute;
+}
+
+#Bouton_planifier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.25em;
+}
+
+#Selection_serveur {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35em;
+}
+
+.Titre {
+  color: white;
+  font-family: '33535gillsansmt';
+  font-size: 1.8em;
+}
+
+.Bouton_texte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: '33535gillsansmt';
+  background-color: #6E0505;
+  border: 1px solid #212121;
+  width: 10em;
+  height: 3.5em;
+}
+
+.Principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.Texte {
+  text-decoration: none;
+}

@@ -1,0 +1,142 @@
+#robot {
+  margin-bottom: 1em;
+}
+
+#description {
+  height: 5em;
+}
+
+#Fleche {
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.user_id {
+  margin-bottom: 1em;
+}
+
+.jeux {
+  margin-bottom: 1em;
+}
+
+.Invitation {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.Espace {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.Ensemble {
+  display: flex;
+  width: 100%;
+}
+
+.Bord {
+  border: 2px solid black;
+}
+
+.Creer_team {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0em;
+  justify-content: center;
+}
+
+.Gauche_droite {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.Gauche {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1em;
+}
+
+.Droit {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+.Validation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px)
+{
+  #user_id {
+    margin-bottom: 1em;
+  }
+
+  #robot {
+    margin-bottom: 1em;
+  }
+
+  #description {
+    height: 5em;
+  }
+
+  #Fleche {
+    margin-top: 1%;
+    margin-left: 1%;
+  }
+
+  .Ensemble {
+    display: flex;
+    width: 100%;
+  }
+
+  .Bord {
+    border: 0px solid black;
+    width: 80%;
+  }
+
+  .Creer_team {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0em;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Gauche_droite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  .Gauche {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0em;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  .Droit {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0em;
+    width: 100%;
+  }
+
+  .Validation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

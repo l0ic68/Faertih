@@ -1,0 +1,137 @@
+#Jeux_head {
+  width: 100%;
+}
+
+#Jeux_head select {
+  width: 100%;
+  color: white;
+  font-family: '33535gillsansmt' !important;
+  background-color: #212121;
+  margin: 0;
+  padding: 0;
+}
+
+#Banniere_image {
+  width: 100%;
+  height: 10em;
+}
+
+#Jeux_nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 3em;
+  background-color: #212121;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#Jeux_nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+
+#Jeux_nav ul li {
+  height: 100%;
+  width: 20%;
+}
+#Jeux_nav ul li a {
+  color: white;
+  font-family: '33535gillsansmt' !important;
+  font-size: 2em;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-right: solid 2px #313131;
+}
+
+#Jeux_nav ul li #Jeux_Current {
+    color: #135A87;
+}
+
+#Jeux_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.Jeux_data {
+  width: 48%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.Jeux_data img {
+  display: block;
+  width: 50%;
+  height: 8em;
+}
+
+.Jeux_data_text {
+  width: 50%;
+  margin-left: 2%;
+}
+
+.Jeux_data_text_titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.Jeux_data_text_titre h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.Jeux_data_text_titre img {
+  margin: 0;
+  padding: 0;
+  height: 1em;
+  width: 10%;
+}
+
+.Jeux_data p {
+  margin: 0;
+  padding: 0;
+}
+
+.Jeux_data a {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+
+/* Pour les écrans inférieurs à 1024px de large */
+@media screen and (max-width: 1024px)
+{
+  .Jeux_data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+}

@@ -1,0 +1,432 @@
+#Barre_nav {
+  display: flex;
+  width: 100%;
+  background-color: #212121;
+  border: 0px;
+  height: 2.5em;
+  color: #BA0808;
+  font-size: 1em;
+  font-family: '33535gillsansmt';
+  font-weight: bold;
+}
+
+#Titre {
+  display: flex;
+  font-size: 1.65em;
+  width: 30%;
+}
+
+#Gros_Titre {
+  display: none;
+}
+
+#Titre, #Mon_planning {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.3em;
+  padding-top: 0.3em;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+#Espace_jour {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+#Planning_nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  background-color: #313131;
+  border-bottom: 2px solid #6E0505;
+  font-family: '33535gillsansmt';
+  color: white;
+}
+
+#Planning_date {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+#Droit {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: flex-end;
+}
+
+#Planning_switch {
+  display: flex;
+  flex-direction: row;
+}
+
+#Jour {
+  font-weight: bold;
+  color: #BA0808;
+  text-decoration: none;
+}
+
+#Semaine {
+  text-decoration: none;
+  color: white;
+}
+
+#Mon_planning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+}
+
+#Mon_planning a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: '33535gillsansmt';
+}
+
+#Mon_planning i {
+  margin-right: 0.3em;
+}
+
+#Date {
+  display: flex;
+  font-size: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#Element {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.Twitch_element {
+  color: #6441a5;
+}
+
+.Youtube_element {
+  color: #6E0505;
+}
+
+.Pencil_element {
+  color: #135A87;
+}
+
+.Angle_gauche, .Angle_droit {
+  color: #212121;
+}
+
+.Angle_gauche {
+  margin-right: 0.5em;
+}
+
+.Angle_droit {
+  margin-left: 0.5em;
+}
+
+.Trait {
+  width: 30%;
+  border: 1px solid black;
+}
+
+.Trait_mobile {
+  display: none;
+}
+
+.Planning_data {
+  border: 1px solid #212121;
+  display: flex;
+  width: 45%;
+  height: 12em;
+  max-height: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #313131;
+}
+
+.Image {
+  border: 1px solid #212121;
+  max-width: 12em;
+  max-height: 12em;
+  min-width: 12em;
+  min-height: 12em;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #212121;
+  width: 100%;
+  height: 100%;
+}
+
+.Nom_jeu {
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0.275em;
+  color: white;
+  font-family: 'GAMEPLAY';
+}
+
+.Horaire {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0.6em;
+  color: white;
+  font-family: '33535gillsansmt';
+}
+
+.Add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 1em;
+  min-width: 1em;
+  width: 100%;
+}
+
+.Image_profil {
+  margin-left: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+.Plus {
+  color: #212121;
+  margin-right: 0.3em;
+}
+
+.Premiere_ligne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.3em;
+}
+
+@media screen and (max-width: 1024px) {
+
+  #Titre {
+    display: none;
+  }
+
+  #Gros_Titre {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #212121;
+    width: 100%;
+    margin: 0;
+    padding: 0.5em;;
+    font-size: 1.7em;
+  }
+
+  #Titre, #Mon_planning {
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-top: 0em;
+    padding-top: 0em;
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+  }
+
+  #Espace_jour {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+  }
+
+  #Planning_nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    background-color: #313131;
+    border-bottom: 2px solid #6E0505;
+    font-family: '33535gillsansmt';
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  #Planning_date {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #212121;
+    width: 100%;
+  }
+
+  #Droit {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #Planning_switch {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #Jour {
+    font-weight: bold;
+    color: #BA0808;
+    text-decoration: none;
+    margin-left: 1em;
+  }
+
+  #Semaine {
+    text-decoration: none;
+    color: white;
+  }
+
+  #Mon_planning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1em;
+  }
+
+  #Mon_planning a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: '33535gillsansmt';
+  }
+
+  #Mon_planning i {
+    margin-right: 0.3em;
+  }
+
+  #Date {
+    display: flex;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #Element {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .Twitch_element {
+    color: #6441a5;
+  }
+
+  .Youtube_element {
+    color: #6E0505;
+  }
+
+  .Pencil_element {
+    color: #135A87;
+  }
+
+  .Angle_gauche, .Angle_droit {
+    color: #212121;
+  }
+
+  .Angle_gauche {
+    margin-right: 0.5em;
+  }
+
+  .Angle_droit {
+    margin-left: 0.5em;
+  }
+
+  .Trait {
+    width: 30%;
+    border: 1px solid black;
+  }
+
+  .Trait_mobile {
+    display: none;
+  }
+
+  .Planning_data {
+    border: 0px solid #212121;
+    border-bottom: 2px solid #212121;
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    background-color: #313131;
+  }
+
+  .Image {
+    border: 0px solid #212121;
+    max-width: 12em;
+    max-height: 12em;
+    min-width: 12em;
+    min-height: 12em;
+  }
+
+  .Info {
+    display: flex;
+    flex-direction: column;
+    border: 0px solid #212121;
+    width: 100%;
+  }
+
+  .Nom_jeu {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.275em;
+    color: white;
+    font-family: 'GAMEPLAY';
+  }
+
+  .Horaire {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.6em;
+    color: white;
+    font-family: '33535gillsansmt';
+  }
+
+  .Add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 1em;
+    min-width: 1em;
+    width: 100%;
+  }
+
+  .Plus {
+    color: #212121;
+  }
+
+  .Premiere_ligne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.3em;
+  }
+}

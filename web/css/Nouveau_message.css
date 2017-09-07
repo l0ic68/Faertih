@@ -1,0 +1,106 @@
+#Fleche {
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.Espace {
+  margin-bottom: 0.5em;
+}
+
+.Nouveau_message {
+  width: 50%;
+  height: 80%;
+  margin: auto;
+}
+
+.Nouveau_message fieldset {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.Dest {
+  width: 100%;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Dest_label, .Obj_label, .Msg_label {
+  margin-bottom: 0.5em;
+}
+
+.Obj {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.Msg {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  width: 100%;
+  height: 10em;
+}
+
+.Msg textarea {
+  height: 90%;
+}
+
+.Envoi_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Envoi {
+  width: 5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1024px)
+{
+
+  #Fleche {
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 100%;
+  }
+
+.Ensemble {
+  display: flex;
+  flex-direction: column;
+}
+
+  .Dest {
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Nouveau_message {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .Obj {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    width: 100%;
+  }
+
+  .Envoi {
+    width: 5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

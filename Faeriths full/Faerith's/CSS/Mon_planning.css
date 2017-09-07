@@ -1,0 +1,115 @@
+.Haut {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Mon_Titre {
+  display: flex;
+  font-size: 1.65em;
+  margin: 0;
+  width: 50%;
+}
+
+.Planning_complet {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.Trait {
+  width: 30%;
+  border: 1px solid black;
+}
+
+.Mon_planning_content {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.Mon_planning_prochaine {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.Mon_planning_prochaine_data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Prochain_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Date {
+  font-weight: bold;
+}
+
+.Horaire {
+  margin: 0;
+  font-size: 1em;
+  margin-right: 2%;
+}
+
+.Name_game {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.Mon_planning_a_regarder {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.Mon_planning_a_regarder_data {
+  display: flex;
+  flex-direction: row;
+}
+
+.Contenu {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.Mon_planning_event {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.Mon_planning_event_data {
+  width: 100%;
+}
+
+.Event_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Event_date {
+  font-weight: bold;
+}
+
+.Event_horaire {
+  font-size: 1em;
+  margin: 0;
+  margin-right: 2%;
+}
+
+.Event_nom {
+  font-size: 1em;
+  margin: 0;
+  margin-right: 2%;
+}

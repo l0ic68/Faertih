@@ -1,0 +1,232 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Index.css') }}"/>
+{% endblock %}
+{% block body %}
+<!-- CONTENU -->
+<main id="Site_content">
+    <section id="Section">
+        {% set test = 0 %}
+        {#{% for article in articles %}#}
+
+        <div id="Index_left">
+            <div id="slider-wrap">
+                <ul id="slider">
+                    {% for promote in promoted %}
+                        {% set deja_later = 'false' %}
+                        {% if promote.video is null %}
+                            <li>
+                                <a href="{{ path('lecture_article',{id: promote.id}) }}"><img
+                                    src="{{ asset( promote.article.banniere.path ) }}" alt="#"></a>
+                                <div class="Slider_Title">
+                                <h3>{{ promote.article.titre }}</h3>
+                                <p>Sub-title #1</p>
+                                {% if app.user != null %}
+                                    {% for later in user.later %}
+                                        {% if later.article.id == promote.article.id %}
+                                            {% set deja_later = 'true' %}
+
+                                        {% endif %}
+                                    {% endfor %}
+                                    {% if deja_later == 'true' %}
+                                        <p>deja Ajouter</p>
+                                    {% else %}
+                                        <button class="button_Later" id="{{ promote.article.id }}" value="article">A
+                                            regarder plus tard
+                                        </button>
+                                    {% endif %}
+                                    {% endif %}
+                                </div>
+                        </li>
+                {% else %}
+                    <li>
+                        <a href="{{ path('lecture_video',{id: promote.id}) }}">
+                            <img src="http://placehold.it/1280x720" alt="#"></a>
+                        <div class="Slider_Title">
+                            <h3>{{ promote.video.titre }}</h3>
+                            <p>Sub-title #1</p>
+                            {% if app.user != null %}
+                                <button class="button_Later" id="{{ promote.video.id }}" value="video">A regarder plus
+                                    tard
+                                </button>
+                            {% endif %}
+                        </div>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+
+                <!--controls-->
+                <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+                <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+                <div id="counter"></div>
+
+                <div id="pagination-wrap">
+                    <ul>
+                    </ul>
+                </div>
+                <!--controls-->
+            </div>
+
+            <div id="slider-bottom-wrap">
+                <ul id="slider-bottom">
+                    <li>
+                        <div class="Slider_video">
+                            <div class="Index_video_content">
+                                {% set compte = 0 %}
+                                {% for date in all %}
+                                <div class="Video_data">
+                                    {% if date.type == "article" %}
+                                        <a href="{{ path('lecture_article',{id: date.id}) }}"><img
+                                                    src="{{ asset( date.banniere.path ) }}" alt="#"></a>
+                                    {% else %}
+                                        <a href="{{ path('lecture_video',{id: date.id}) }}"><img
+                                                    src="{{ asset( date.banniere.path ) }}" alt="#"></a>
+                                    {% endif %}
+                                    <div class="Slider_Title_2">
+                                        <h1>{{ date.titre }}</h1>
+                                    </div>
+                                </div>
+                                {% set compte = compte + 1 %}
+                                {% if compte == 6 %}
+                                {% set compte = 0 %}
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="Slider_video">
+                            <div class="Index_video_content">
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                </ul>
+                <!-- Floating Action Button -->
+
+                <!--controls-->
+                <div class="btns-bottom" id="next-bottom"><i class="fa fa-arrow-right"></i></div>
+                <div class="btns-bottom" id="previous-bottom"><i class="fa fa-arrow-left"></i></div>
+
+                <!--controls-->
+            </div>
+        </div>
+    </section>
+
+    <div id="Index_right">
+        <iframe src="https://discordapp.com/widget?id=132584235952373760&theme=dark" allowtransparency="true"
+                frameborder="0" id="Discord"></iframe>
+        <div id="Planing">
+            <div id="Planing_switch">
+                <p>
+                    <span class="icon-twitch" id="icon-twitch-planning"></span>
+                </p>
+                <p>
+                    <span class="icon-youtube" id="icon-youtube-planning"></span>
+                </p>
+                <p>
+                    <span class="icon-pencil2" id="icon-pencil2-planning"></span>
+                </p>
+            </div>
+            <div id="Planing_Data_Container">
+                <div class="Planning_data_Dark">
+                    <img src="http://via.placeholder.com/350x350" alt="#">
+                    <div class="Planning_data_text">
+                        <p class="Planning_Pseudo">Pseudo</p>
+                        <p class="Planning_Title">Titre jeux / live ect</p>
+                    </div>
+                    <div class="Planning_Horraire">
+                        <p class="Planning_date">14/03/54</p>
+                        <p class="Planning_Heure"><span class="horraire_debut">00h00</span> - <span
+                                    class="horraire_fin">00h00</span></p>
+                    </div>
+                </div>
+
+                <div class="Planning_data">
+                    <img src="http://via.placeholder.com/350x350" alt="#">
+                    <div class="Planning_data_text">
+                        <p class="Planning_Pseudo">Pseudo</p>
+                        <p class="Planning_Title">Titre jeux / live ect</p>
+                    </div>
+                    <div class="Planning_Horraire">
+                        <p class="Planning_date">14/03/54</p>
+                        <p class="Planning_Heure"><span class="horraire_debut">00h00</span> - <span
+                                    class="horraire_fin">00h00</span></p>
+                    </div>
+                </div>
+
+                <div class="Planning_data_Dark">
+                    <img src="http://via.placeholder.com/350x350" alt="#">
+                    <div class="Planning_data_text">
+                        <p class="Planning_Pseudo">Pseudo</p>
+                        <p class="Planning_Title">Titre jeux / live ect</p>
+                    </div>
+                    <div class="Planning_Horraire">
+                        <p class="Planning_date">14/03/54</p>
+                        <p class="Planning_Heure"><span class="horraire_debut">00h00</span> - <span
+                                    class="horraire_fin">00h00</span></p>
+                    </div>
+                </div>
+
+                <div class="Planning_data">
+                    <img src="http://via.placeholder.com/350x350" alt="#">
+                    <div class="Planning_data_text">
+                        <p class="Planning_Pseudo">Pseudo</p>
+                        <p class="Planning_Title">Titre jeux / live ect</p>
+                    </div>
+                    <div class="Planning_Horraire">
+                        <p class="Planning_date">14/03/54</p>
+                        <p class="Planning_Heure"><span class="horraire_debut">00h00</span> - <span
+                                    class="horraire_fin">00h00</span></p>
+                    </div>
+                </div>
+
+                <div class="Planning_data_Dark">
+                    <img src="http://via.placeholder.com/350x350" alt="#">
+                    <div class="Planning_data_text">
+                        <p class="Planning_Pseudo">Pseudo</p>
+                        <p class="Planning_Title">Titre jeux / live ect</p>
+                    </div>
+                    <div class="Planning_Horraire">
+                        <p class="Planning_date">14/03/54</p>
+                        <p class="Planning_Heure"><span class="horraire_debut">00h00</span> - <span
+                                    class="horraire_fin">00h00</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="Planning_Complet">
+            <a href="Planning.html">Planning Complet <span class="icon-calendar-o"></span></a>
+        </div>
+    </div>
+    </div>
+</main>
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/Index_Slider.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/Index_Slider_bottom.js') }}"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.button_Later').on('click', function () {
+                var id = $(this).attr("id");
+                var type = $(this).val();
+                $.ajax({
+                    type: "GET",
+                    dataType: "json",
+                    url: "{{ path('regarder_plus_tard') }}",
+                    cache: false,
+                    data: {id: id, type: type},
+                    success: function (response) {
+                        alert('success')
+                    },
+                    error: function (response) {
+                        console.log(response);
+                    }
+                });
+            });
+        });
+    </script>
+
+{% endblock %}
+{% endblock %}

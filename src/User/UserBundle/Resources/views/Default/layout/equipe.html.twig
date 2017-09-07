@@ -1,0 +1,90 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Equipe.css') }}"/>
+{% endblock %}
+{% block body %}
+<section id="Ensemble">
+    <div id="Equipe_name">
+        <div id="Equipe_Container">
+            <select name="Role" id="Role">
+                <option value="ROLE_ADMIN">Administrateurs</option>
+                <option value="ROLE_MODERATEUR">Moderateurs</option>
+                <option value="Streamers">Streamers</option>
+                <option value="Videastes">Videastes</option>
+                <option value="Redacteurs">Redacteurs</option>
+            </select>
+            <div id="Profil_all">
+                {% for admin in role_admin %}
+                <img src="{{asset(admin.media.path) }}" alt="#" class="Profil_pic" id="{{ admin.id }}">
+                {% endfor %}
+            </div>
+            <a href="Candidature.html" class="Candidature">Envie de rejoindre l'équipe de Faerith's ? Déposez votre candidature !<span class="icon-send"></span></a>
+        </div>
+    </div>
+    <div id="Equipe_detail">
+        <div id="Detail_Container">
+            <div id="First_Line">
+                <h1 id="Pseudo">{{ default_user.username }}</h1>
+                {#<h2 id="Rang"></h2>#}
+            </div>
+            <hr id="Trait">
+            <p id="Description"><img src="{{ asset( default_user.media.path ) }}" alt="#" class="Mini_pic">{{ default_user.description }}</p>
+            <hr id="Trait_social">
+            <div id="Equipe_social">
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-facebook-square"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-twitter-square"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-tumblr-square"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-instagram2"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-youtube"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-twitch"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-soundcloud"></span></a>
+            </div>
+        </div>
+    </div>
+</section>
+{% block javascripts %}
+    <script type="text/javascript">
+        $(function(){
+            $('.Profil_pic').on('click', function()
+            {
+                var id = $(this).attr("id");
+                $.ajax({
+                    type: "GET",
+                    dataType: "json",
+                    url: "{{ path('description_equipe') }}",
+                    cache: false,
+                    data: { id: id },
+                    success:function(response){
+                        $('#Equipe_detail').replaceWith(response.classifiedList);
+                    },
+                    error:function(response){
+                        console.log(response);
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            $('#Role').on('change', function()
+            {
+                var e = document.getElementById("Role");
+                var role = e.options[e.selectedIndex].value;
+                $.ajax({
+                    type: "GET",
+                    dataType: "json",
+                    url: "{{ path('type_equipe') }}",
+                    cache: false,
+                    data: { text: role},
+                    success:function(response){
+                        $('#Profil_all').replaceWith(response.classifiedList);
+                    },
+                    error:function(response){
+                        console.log(response);
+                    }
+                });
+            });
+        });
+    </script>
+{% endblock %}
+{% endblock %}

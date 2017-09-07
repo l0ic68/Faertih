@@ -1,0 +1,39 @@
+{% if articles != null %}
+        <div id="slider-bottom-wrap" class="boucle">
+            <ul id="slider-bottom">
+                <li>
+                    <div class="Slider_video">
+                        <div class="Index_video_content">
+                            {% set compte = 0 %}
+                            {% for article in articles %}
+                            <div class="Video_data">
+                                <a href="{{ path('lecture_article',{id: article.id}) }}">
+                                    <img src="{{ asset( article.banniere.path ) }}" alt="#">
+                                </a>
+                                    <h1>{{ article.titre }}</h1>
+                            </div>
+                            {% set compte = compte + 1 %}
+                            {% if compte == 6 %}
+                            {% set compte = 0 %}
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Slider_video">
+                        <div class="Index_video_content">
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+            </ul>
+            <!-- Floating Action Button -->
+
+            <!--controls-->
+            <div class="btns-bottom" id="next-bottom"><i class="fa fa-arrow-right"></i></div>
+            <div class="btns-bottom" id="previous-bottom"><i class="fa fa-arrow-left"></i></div>
+
+            <!--controls-->
+        </div>
+{% else %}
+    <p> pas de résultat</p>
+{% endif %}

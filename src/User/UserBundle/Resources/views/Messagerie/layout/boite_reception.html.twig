@@ -1,0 +1,55 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Boite_reception.css') }}"/>
+{% endblock %}
+{% block body %}
+<section>
+    <div id="Boite_reception_nav">
+        <ul>
+            <li id="MSG_Current"><a href="#">Boite de Reception</a></li>
+            <li><a href="Corbeille.html">Corbeille</a></li>
+            <li><a href="{{ path('nouveau_message') }}">Nouveau message</a></li>
+        </ul>
+    </div>
+    <div id="Reception_Content">
+        <div id="Boite_reception">
+            <div id="Boite_reception_content">
+                <div id="Boite_reception_controler">
+                    <p>Auteur</p>
+                    <p>Messages</p>
+                    <p>Dernier msg</p>
+                    <input type="checkbox" name="selection_all" class="msg_check">
+                </div>
+                {% for message in messages %}
+                    {% if  message.lu  == true%}
+                    <div class="lu">
+                    {% else %}
+                     <div class="pasLu">
+                     {% endif %}
+                    <a href="{{ path('message_ouvert',{id : message.id}) }}">
+                <div class="Boite_reception_data">
+                    <div class="Boite_reception_user">
+                        <img src="{{ asset(message.expediteur.media.path) }}" class="Img_profil" alt="#">
+                        <h1>{{ message.expediteur }}</h1>
+                    </div>
+                    <div class="msg_obj">
+                        <h2>{{ message.objet }}</h2>
+                    </div>
+                    <div class="Boite_reception_data_time">
+                        {{ message.date|date() }}
+                    </div>
+                    <input type="checkbox" name="selection" class="msg_check">
+                </div>
+                    </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="Reception_Annuaire">
+            <p>Annuaire</p>
+            <div id="Reception_Annuaire_data">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

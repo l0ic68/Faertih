@@ -1,0 +1,328 @@
+#Banner, #Banner_bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+#Banner {
+  border-bottom: 2px solid #6E0505;
+  width: 100%;
+  height: auto;
+}
+
+#Banner img {
+  width: 100%;
+  height: auto;
+}
+
+#Banner_bottom {
+  background-color: #313131;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#Utilisateur {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+#info_complementaire {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+#Presentation {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+}
+
+#Live_ON {
+  background-color: green;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+}
+
+#Header_Info {
+  margin-left: 3em;
+  display: flex;
+  flex-direction: row;
+}
+
+#Header_Info i {
+  position: relative;
+  top: 2em;
+  z-index: 3;
+  right: 1.1em;
+}
+
+#IMG_Info {
+  display: flex;
+  flex-direction: column;
+}
+
+#user_id {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#user_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#user_info h2 {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+#Live_ON, #Pseudo_font {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#Pseudo_font {
+  font-family: '33535gillsansmt';
+  color: #BA0808;
+}
+
+#Ensemble_box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#box_profil_gauche {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#box_profil_droite {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#Icone_blanc {
+  color: white;
+}
+
+#Ensemble_box, #user_info, #info_complementaire, #Presentation, #box_profil {
+  font-family: '33535gillsansmt';
+  color: white;
+}
+
+#Serveurs_ligne {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  align-items: center;
+  color: black;
+}
+
+#Equipes_lignes {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  align-items: center;
+  color: black;
+}
+
+#box_profil_square {
+  margin-left: 0.5em;
+}
+
+#box_profil_square i {
+  margin: 0.2em;
+}
+
+#Discord_ID, #Calendrier {
+  display: flex;
+  flex-direction: row;
+}
+
+#Inscrit {
+  margin-left: 0.5em;
+}
+
+#Icones_jeux {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#Ranger_un {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#Ranger_deux {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#Ranger_trois {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#Pseudo_Steam, #Pseudo_Origin, #Pseudo_Uplay, #Pseudo_PSN, #Pseudo_Xbox, #Pseudo_Nintendo, #Pseudo_GoG, #Pseudo_Blizzard {
+  margin-left: 0.5em;
+}
+
+#Steam_test {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#Steam_total, #Origin_total, #Uplay_total, #PSN_total, #Xbox_total, #Nintendo_total, #GoG_total, #Battle_total {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.Titre_decale {
+  margin-left: 0.5em;
+}
+
+.Jeux_Images {
+  height: 50px;
+  width: 50px;
+}
+
+.Modif_description {
+  margin-top: 3em;
+  margin-right: 0.25em;
+}
+
+.Separation_info {
+  color: #212121;
+  font-size: 1.5em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profil_picture {
+  position: relative;
+  bottom: 4em;
+  border: 2px solid #6E0505;
+  width: 100%;
+  height: 100%;
+  min-height: 6em;
+  min-width: 6em;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.banniere_profil {
+  min-height: 6em;
+}
+
+.user_size {
+  font-size: 1em;
+}
+
+.box_profil {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #212121;
+  width: 100%;
+  height: 17em;
+}
+
+.box_profil_pic {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* Pour les écrans inférieurs à 1280px de large */
+@media screen and (max-width: 1280px)
+{
+  #Banner, #Banner_bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Banner {
+    border-bottom: 2px solid #6E0505;
+    width: 100%;
+    height: auto;
+  }
+
+  #Banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  #Banner_bottom {
+    background-color: #313131;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #Utilisateur {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  #info_complementaire {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  #Presentation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #Ensemble_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #box_profil_gauche {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #box_profil_droite {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .box_profil {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #212121;
+    width: 100%;
+    height: auto;
+  }
+}

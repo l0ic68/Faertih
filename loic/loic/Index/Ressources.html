@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!-- UTILITAIRES -->
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- DESCRIPTION -->
+		<title>Faerith's - Ressources</title>
+		<meta name="description" content="Collectif de créateurs sur Internet et communauté multi-gaming francophone">
+		<meta name="keywords" content="Faerith's, Collectif, Vidéaste, Communauté, Multi-Gaming, Jeux Vidéo">
+		<!-- CSS -->
+		<link type="text/css" rel="stylesheet" href="fixe/fixe.css"/>
+		<link type="text/css" rel="stylesheet" href="../CSS/Ressources.css"/>
+		<link type="text/css" rel="stylesheet" href="../CSS/Fonts/Fonts.css"/>
+		<!-- FAVICON -->
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../Images/Favicon/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../Images/Favicon/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../Images/Favicon/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../Images/Favicon/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="../Images/Favicon/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../Images/Favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../Images/Favicon/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../Images/Favicon/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="../Images/Favicon/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="../Images/Favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="../Images/Favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="../Images/Favicon/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="../Images/Favicon/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="&nbsp;"/>
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="../Images/Favicon/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="../Images/Favicon/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="../Images/Favicon/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="../Images/Favicon/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="../Images/Favicon/mstile-310x310.png" />
+		<!-- POLICE -->
+		<link href="https://www.fontify.me/wf/198872dce61de360b6e9d0b27707a01c" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<!-- BARRE DE NAVIGATION -->
+		<header id="Main_header">
+
+			<!-- LOGO -->
+			<a href="Index.html" id="Logo"><h1><img src="fixe/Icone/Fichier.svg" alt="Logo_Faeriths"/></h1></a>
+
+			<!-- MENU -->
+			<nav id="Navigation_principale">
+				<ul>
+					<li><a href="Live.html">Live</a></li>
+					<li><a href="Video.html">Vidéo</a></li>
+					<li><a href="Article.html">Article</a></li>
+					<li><a href="Serveur.html">Serveur</a></li>
+					<li><a href="Annuaire.html">Annuaire</a></li>
+					<li><a href="Equipe.html">Equipe</a></li>
+					<li><a href="Forum.html">Forum</a></li>
+					<li><a href="Don.html">Don</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- BARRE DE RECHERCHE -->
+			<div id="Recherche">
+				<input class="search" type="text" id="search" />
+				<span class="icon-search" id="icon-search-main"></span>
+			</div>
+
+		</header>
+
+		<!-- MENU MOBILE -->
+		<header id="Header_Mobile">
+			<span class="icon-menu"></span>
+			<a href="Index.html" id="Logo_Mobile"><h1><img src="fixe/Icone/Fichier.svg"/></h1></a>
+			<div id="Header_droit">
+				<span class="icon-search"></span>
+				<span class="icon-user"></span>
+			</div>
+		</header>
+		 <nav id="Navigation_mobile">
+				<ul>
+					<li><a href="Live.html">Live</a></li>
+					<li><a href="Video.html">Vidéo</a></li>
+					<li><a href="Article.html">Article</a></li>
+					<li><a href="Serveur.html">Serveur</a></li>
+					<li><a href="Annuaire.html">Annuaire</a></li>
+					<li><a href="Equipe.html">Equipe</a></li>
+					<li><a href="Forum.html">Forum</a></li>
+					<li><a href="Don.html">Don</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- ENTRE LE HEADER ET LE FOOTER -->
+		<main id="Site_content">
+
+			<!-- QUI EST EN LIGNE ? -->
+			<aside id="Cote_gauche">
+				<div id="Connect">
+					<p onclick="connexion()">connexion</p>
+					<p onclick="window.location='inscription.html';">inscription</p>
+				</div>
+				<div id="Connexion">
+					<input name="pseudo" type="text" placeholder="Pseudo" class="connect_bar">
+					<input name="search" type="password" placeholder="Mot de passe" class="connect_bar">
+				</div>
+
+				<!-- GESTION PROFIL -->
+				<div id="Profil_User">
+					<a href=""><span class="icon-user"></span></a>
+					<a href=""><span class="icon-bell-o"></span></a>
+					<a href="Planning.html"><span class="icon-calendar-o"></span></a>
+					<a href=""><span class="icon-envelope-o"></span></a>
+					<a href=""><span class="icon-cog"></span></a>
+					<a href=""><span class="icon-power-off"></span></a>
+				</div>
+				<div id="Live_Switch">
+					<p id="ALL">ALL</p>
+					<p id="ON">ON</p>
+					<p id="OFF">OFF</p>
+				</div>
+				<div id="Live_Search">
+					<span class="icon-search"></span>
+					<p>| Recherche</p>
+				</div>
+				<div id="Live_Data_Container">
+					<div class="Live_data_Dark">
+						<img src="http://via.placeholder.com/350x350" alt="#">
+						<div class="Live_data_text">
+							<p class="Live_Pseudo">Pseudo</p>
+							<p class="Live_Title">Titre jeux / live ect</p>
+						</div>
+						<div class="Live_Horraire">
+							<div class="Live_ON"></div>
+							<p class="Live_Viewer">0</p>
+						</div>
+					</div>
+
+					<div class="Live_data_light">
+						<img src="http://via.placeholder.com/350x350" alt="#">
+						<div class="Live_data_text">
+							<p class="Live_Pseudo">Pseudo</p>
+							<p class="Live_Title">Titre jeux / live ect</p>
+						</div>
+						<div class="Live_Horraire">
+							<div class="Live_ON"></div>
+							<p class="Live_Viewer">0</p>
+						</div>
+					</div>
+
+					<div class="Live_data_Dark">
+						<img src="http://via.placeholder.com/350x350" alt="#">
+						<div class="Live_data_text">
+							<p class="Live_Pseudo">Pseudo</p>
+							<p class="Live_Title">Titre jeux / live ect</p>
+						</div>
+						<div class="Live_Horraire">
+							<div class="Live_OFF"></div>
+							<p class="Live_Viewer">0</p>
+						</div>
+					</div>
+				</div>
+			</aside>
+
+			<!-- CONTENU -->
+			<section id="Ressources_main">
+				<div class="Ressources_Box">
+					<h1 class ="Title">Logo</h1>
+					<div class="Ressources_Lines">
+						<img src="http://via.placeholder.com/350x350" alt="#" class="Ressources_Logo">
+					</div>
+					<h1 class ="Title">Fond d'écran</h1>
+					<div class="Ressources_Lines">
+						<img src="http://via.placeholder.com/350x350" alt="#" class="Ressources_Wallpaper">
+						<img src="http://via.placeholder.com/350x350" alt="#" class="Ressources_Wallpaper">
+					</div>
+					<h1 class ="Title">Flyers</h1>
+					<div class="Ressources_Lines">
+					</div>
+				</div>
+				<div class="Ressources_Box">
+					<h1 class ="Title">Couleurs</h1>
+					<div class="Ressources_Lines">
+						<div id="Color_Box_RG">
+							<p>Rouge foncé</p>
+							<div>
+								<p>#6E0505</p>
+								<p>RVB : 110, 5, 5</p>
+							</div>
+						</div>
+						<div id="Color_Box_RC">
+							<p>Rouge Clair</p>
+							<div>
+								<p>#6E0505</p>
+								<p>RVB : 186, 8, 8</p>
+							</div>
+						</div>
+						<div id="Color_Box_VC">
+							<p>Vert Clair</p>
+							<div>
+								<p>#00BA35</p>
+								<p>RVB : 0, 186, 53</p>
+							</div>
+						</div>
+						<div id="Color_Box_B">
+							<p>Bleu</p>
+							<div>
+								<p>#135A87</p>
+								<p>RVB : 19, 90, 135</p>
+							</div>
+						</div>
+						<div id="Color_Box_GF">
+							<p>Gris foncé</p>
+							<div>
+								<p>#212121</p>
+								<p>RVB : 33, 33, 33</p>
+							</div>
+						</div>
+						<div id="Color_Box_G">
+							<p>Gris</p>
+							<div>
+								<p>313131</p>
+								<p>RVB : 49, 49, 49</p>
+							</div>
+						</div>
+						<div id="Color_Box_GC">
+							<p>Gris Clair</p>
+							<div>
+								<p>#444850</p>
+								<p>RVB : 68, 72, 80</p>
+							</div>
+						</div>
+					</div>
+					<h1 class ="Title">Polices</h1>
+					<p id="Ressources_Gameplay">GAMEPLAY</p>
+					<p id="Ressources_Gill">Gill Sans MT</p>
+					<p id="Ressources_Arial">Arial</p>
+				</div>
+	    </section>
+		</main>
+
+		<!-- FOOTER -->
+		<footer>
+			 <!-- ICÔNES SOCIALES -->
+			 <div id="Footer_left">
+				 <p id="Rejoindre">Rejoignez-nous sur :</p>
+				 <div id="Footer_Social">
+						 <a href="https://www.facebook.com/Faeriths" target="_blank" class="Footer_Icone"><span class="icon-facebook" id="icon-facebook"></span></a>
+						 <a href="https://twitter.com/Faeriths" target="_blank" class="Footer_Icone"><span class="icon-twitter" id="icon-twitter"></span></a>
+						 <a href="http://steamcommunity.com/groups/faeriths" target="_blank" class="Footer_Icone"><span class="icon-brand5" id="icon-brand5"></span></a>
+						 <a href="https://discord.gg/0juokWszfSgXSwAn" target="_blank" class="Footer_Icone"><span class="icon-Discord_logo" id="icon-Discord_logo"></span></a>
+						 <a href="http://www.twitch.tv/faeriths" target="_blank" class="Footer_Icone"><span class="icon-twitch" id="icon-twitch"></span></a>
+						 <a href="https://www.youtube.com/channel/UCqnit1-kFqW4h2CVnsvEs2g" target="_blank" class="Footer_Icone"><span class="icon-youtube" id="icon-youtube"></span></a>
+						 <a href="https://soundcloud.com/faeriths" target="_blank" class="Footer_Icone"><span class="icon-soundcloud" id="icon-soundcloud"></span></a>
+						 <a href="https://www.instagram.com/faeriths/" target="_blank" class="Footer_Icone"><span class="icon-instagram" id="icon-instagram"></span></a>
+				 </div>
+			 </div>
+
+			 <!-- INFORMATIONS -->
+			 <div id="Footer_center">
+					 <div id="Footer_Information">
+						 <ul>
+							 <li><a href="Mention_legale.html">Mention Légale</a></li>
+							 <li><a href="Condition_generale.html">Condition Générale</a></li>
+							 <li><a href="Contact.html">Nous contacter</a></li>
+						 </ul>
+						 <ul>
+							 <li><a href="FAQ.html">FAQ</a></li>
+							 <li><a href="Boite_a_idee.html">Boîte à idée</a></li>
+							 <li><a href="A_propos.html">Qui sommes-nous ?</a></li>
+						 </ul>
+					 </div>
+				 </div>
+
+				 <!-- COPYRIGHT -->
+				 <div id="Footer_right">
+					 <a href="index.html"><img src="fixe/Icone/press_start.png" alt="Logo_Faeriths" id="Logo_Faeriths"/></a>
+					 <p>Copyright © 2017 Faerith's Tous droits réservés.</p>
+				 </div>
+			 </footer>
+
+			 <!-- SCRIPT JAVASCRIPT -->
+			 <script src="https://code.jquery.com/jquery.js"></script>
+			 <script type="text/javascript" src="Fixe/javascript.js"></script>
+		 </body>
+ </html>

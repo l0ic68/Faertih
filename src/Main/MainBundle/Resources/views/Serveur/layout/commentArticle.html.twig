@@ -1,0 +1,54 @@
+<div class="boucle">
+    <div class="Comment">
+        <h3 class="Comment_titre">COMMENTAIRES ({{ article.nombreCommentaire }}) |</h3>
+        <div class="Comment_data">
+            {% if not article.commentaire.empty %}
+                {% for comment in article.commentaire %}
+                    <div class="Comment_ligne">
+                        <img src="{{ asset(comment.user.media.path ) }}" alt="#" class="Comment_profil">
+                        <p class="Comment_pseudo">{{ comment.user.username }}</p>
+                    </div>
+                    <p class="Comment_text">{{ comment.comment }}</p>
+                    <p class="Comment_info">à {{ comment.dateComment|date() }}</p>
+                    <div class="Repondre">
+                        <button>Répondre</button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+{% if app.user != null %}
+    <div id="Poster_commentaire">
+        <h1>Poster un commentaire</h1>
+        <textarea name="Message" id="Message" required></textarea>
+        <div class="Bouton_envoyer">
+            <button class="comment" id="{{ article.id }}">Envoyer</button>
+        </div>
+    </div>
+{% else %}
+    <p>Vous n'êtes pas connecté </p>
+{% endif %}
+</div>
+{% block javascripts %}
+<script type="text/javascript">
+    $(function () {
+        $('.comment').on('click', function () {
+            var id = $(this).attr("id");
+            var commentaire = $("#Message").val();
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "{{ path('commentArticle') }}",
+                cache: false,
+                data: {id: id, comment: commentaire},
+                success: function (response) {
+                    $('.boucle').replaceWith(response.classifiedList);
+                },
+                error: function (response) {
+                    console.log(response);
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

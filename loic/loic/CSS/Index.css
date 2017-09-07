@@ -1,0 +1,313 @@
+#Index_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#Index_left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Slider {
+  width: 100%;
+  height: 25em;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2%;
+
+}
+
+.Slider a, .Slider a img {
+  width: 100%;
+  height: 23em;
+  margin: 0;
+  padding: 0;
+}
+
+#Slider_Title {
+  position: relative;
+  bottom: 3em;
+  margin: 0;
+  padding: 0;
+  border-top: solid 2px #6E0505;
+  background-color: RGBA(49, 49, 49, 0.7);
+  height: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Slider_Title h1 {
+  font-family: '33535gillsansmt' !important;
+  color: white;
+}
+
+#Slider_Title p {
+  font-family: '33535gillsansmt' !important;
+  color: #BA0808;
+}
+#Slider_Nav {
+  position: relative;
+  bottom: 3.3em;
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#Slider_Nav_Link1, #Slider_Nav_Link2, #Slider_Nav_Link3, #Slider_Nav_Link4, #Slider_Nav_Link5 {
+  height: 0.7em;
+  width: 0.7em;
+  border-radius: 100%;
+  background-color: #135A87;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+#Slider_Nav_Link_Current {
+  background-color: #BA0808;
+}
+
+#Slider_video {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#Index_video_content {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon-caret-right, .icon-caret-left {
+    font-size: 2.2em;
+    margin-top: 1%;
+}
+
+.Video_data {
+  width: 30%;
+  height: 11em;
+  margin-top: 2%;
+  border: solid black 1px;
+}
+
+.Video_data a, .Video_data img {
+  width: 100%;
+}
+
+.Slider_Title_2 {
+  position: relative;
+  bottom: 2em;
+  margin: 0;
+  padding: 0;
+  border-top: solid 2px #6E0505;
+  background-color: RGBA(49, 49, 49, 0.7);
+  height: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Slider_Title_2 h1 {
+  font-family: '33535gillsansmt' !important;
+  color: white;
+}
+
+#Index_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #313131;
+  width: 25%;
+}
+
+#Discord {
+   width:100%;
+   height: 25em;
+   margin: 0;
+}
+
+#Planing {
+  width: 100%;
+}
+
+#Planing_switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #313131;
+  height: 3em;
+}
+
+#Planing_switch p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: solid black 1px;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  width: 33.33%;
+  height: 100%;
+  margin: 0;
+}
+
+#icon-twitch-planning {
+  color: #6441a5;
+  font-size: 2em;
+}
+
+#icon-youtube-planning {
+  color: #b61318;
+  font-size: 2em;
+}
+
+#icon-pencil2-planning {
+  color: black;
+  font-size: 2em;
+}
+
+#Planing_Data_Container {
+  margin-top: 4px;
+  border-top: 2px solid #6e0505;
+}
+
+.Planning_data, .Planning_data_Dark {
+  display: flex;
+  flex-direction: row;
+  width: 96%;
+  height: 4em;
+  padding: 2%;
+    margin: 0;
+}
+
+.Planning_data_Dark {
+  background-color: #212121;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+.Planning_data img, .Planning_data_Dark img {
+  height: 100%;
+  width: 3em;
+}
+
+.Planning_data_text {
+  height: 100%;
+  margin-left: 2%;
+}
+
+.Planning_Pseudo {
+  font-size: 1em;
+  font-family: Gameplay;
+  color: #BA0808;
+  margin: 0;
+  padding: 0;
+}
+
+.Planning_Title {
+  color: white;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Gameplay;
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+}
+
+.Planning_Horraire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 6em;
+  margin: 0;
+  padding: 0;
+}
+
+.Planning_Horraire p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  font-family: '33535gillsansmt' !important;
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+}
+
+.Planning_Heure {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#Planning_Complet {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+#Planning_Complet a {
+  color: white;
+  font-family: '33535gillsansmt' !important;
+  margin-right: 1em;
+  font-size: 1.3em;
+  text-decoration: none;
+  height: 2em;
+}
+
+@media screen and (max-width: 1024px)
+{
+  .Index_left {
+    width: 100%;
+  }
+
+  .Slider {
+    width: 100%;
+    height: 15em;
+    margin-top: 0%;
+  }
+
+  .Index_video_content {
+    width: 100%;
+  }
+
+  .Slider_fleche {
+      display: none;
+  }
+
+  .Video_data {
+    width: 100%;
+    height: auto;
+    margin-top: 0%;
+  }
+
+  .Index_right {
+    display: none;
+  }
+}

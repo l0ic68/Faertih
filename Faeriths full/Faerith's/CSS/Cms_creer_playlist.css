@@ -1,0 +1,62 @@
+#Fleche {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.Total {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+.Centre {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.Espace {
+  display: flex;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.Boutton {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  height: 3em;
+  width: 40%;
+}
+
+@media screen and (max-width: 1024px) {
+  .Total {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 0px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+  }
+
+  .Centre {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}

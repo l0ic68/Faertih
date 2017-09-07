@@ -1,0 +1,455 @@
+article {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-left: 2px solid #6e0505;
+  border-right: 2px solid #6e0505;
+  border-bottom: 2px solid #6e0505;
+  background-color: #313131;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Message {
+  display: flex;
+  flex-direction: column;
+  height: 8em;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Bandeau {
+  width: 100%;
+  height: 15em;
+  border-bottom: 2px solid #6e0505;
+}
+
+#Banniere_image {
+  width: 100%;
+  height: 100%;
+}
+
+#Info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Title {
+  font-size: 2em;
+  color: #BA0808;
+  font-family: '33535gillsansmt' !important;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#Categorie {
+  font-size: 1em;
+  font-family: '33535gillsansmt' !important;
+  margin: 0;
+}
+
+#Author {
+  font-size: 1em;
+  font-family: '33535gillsansmt' !important;
+  margin: 0;
+}
+
+#Auteur_data {
+  color: #BA0808;
+}
+
+#Action_user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+  font-size: 2em;
+  width: 100%;
+  margin-top: 1em;
+}
+
+#contenu_line {
+  border: solid black 1px;
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+#Contenu {
+  display: flex;
+  font-family: Arial;
+  flex-direction: column;
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+#Contenu_titre {
+  font-family: '33535gillsansmt' !important;
+  margin-bottom: 0;
+}
+
+#Partage {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 2em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#A_propos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+#Profil_auteur {
+  height: 4em;
+  width: 4em;
+}
+
+#Pseudo_auteur {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+#Ligne_pseudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#Pseudo_texte {
+  margin-top: 0;
+}
+
+#Pseudo_titre {
+  margin-bottom: 0.5em;
+}
+
+#Interraction {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Bouton_abonnement {
+    height: 2em;
+}
+
+.Interraction_ligne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Precedent {
+  display: flex;
+  border: 1px solid black;
+  width: 50%;
+  justify-content: space-around;
+  text-decoration: none;
+  background-color: grey;
+  height: 2em;
+  align-items: center;
+}
+
+.Suivant {
+  display: flex;
+  border: 1px solid black;
+  width: 50%;
+  justify-content: space-around;
+  text-decoration: none;
+  background-color: grey;
+  height: 2em;
+  align-items: center;
+}
+
+.Comment {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+.Comment_titre {
+  margin-bottom: 0.5em;
+}
+
+.Comment_ligne {
+  display: flex;
+  flex-direction: row;
+}
+
+.Comment_profil {
+  height: 3em;
+  width: 3em;
+}
+
+.Comment_pseudo {
+  font-size: 1em;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.Comment_text {
+  margin-top: 0;
+}
+
+.Comment_info {
+  font-weight: bolder;
+}
+
+.Repondre {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#Poster_commentaire {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+.Bouton_envoyer {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px)
+{
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 0px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #Message {
+    display: flex;
+    flex-direction: column;
+    height: 8em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Bandeau {
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .Img_bandeau {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .Categorie {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .Author {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .Action_user {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .Partager {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Later {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Contenu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .Contenu_titre {
+    margin-bottom: 0;
+  }
+
+  .Partage {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Bouton_partage_fb {
+    width: 15%;
+    height: 2em;
+  }
+
+  .Bouton_partage_tw {
+    width: 15%;
+    height: 2em;
+  }
+
+  .Bouton_partage_tu {
+    width: 15%;
+    height: 2em;
+  }
+
+  .A_propos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .Pseudo_auteur {
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+  .Ligne_pseudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .Pseudo_texte {
+    margin-top: 0;
+  }
+
+  .Pseudo_titre {
+    margin-bottom: 0.5em;
+  }
+
+  .Interraction {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Bouton_abonnement {
+      height: 2em;
+  }
+
+  .Interraction_ligne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .Precedent {
+    display: flex;
+    border: 1px solid black;
+    width: 50%;
+    justify-content: space-around;
+    text-decoration: none;
+    background-color: grey;
+    height: 2em;
+    align-items: center;
+  }
+
+  .Suivant {
+    display: flex;
+    border: 1px solid black;
+    width: 50%;
+    justify-content: space-around;
+    text-decoration: none;
+    background-color: grey;
+    height: 2em;
+    align-items: center;
+  }
+
+  .Comment {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .Comment_titre {
+    margin-bottom: 0.5em;
+  }
+
+  .Comment_ligne {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Comment_pseudo {
+    font-size: 1em;
+    margin-top: 0;
+    font-weight: bold;
+  }
+
+  .Comment_text {
+    margin-top: 0;
+  }
+
+  .Comment_info {
+    font-weight: bolder;
+  }
+
+  .Repondre {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .Poster_commentaire {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .Bouton_envoyer {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+  }
+}

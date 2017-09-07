@@ -1,0 +1,141 @@
+#Retour_accueil {
+  text-decoration: none;
+  color: #212121;
+  position: absolute;
+}
+
+#Bouton_planifier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.25em;
+}
+
+#Recherche_banni {
+  width: 20em;
+}
+
+#Bannir {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #313131;
+  border: 2px solid #6E0505;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+#Bouton_valider {
+  color: white;
+  font-family: '33535gillsansmt';
+  background-color: #6E0505;
+  border: 1px solid #212121;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 2em;
+}
+
+#Recherche_banni {
+  background-color: #212121;
+  border: 0;
+  height: 2em;
+}
+
+.Titre {
+  color: white;
+  font-family: '33535gillsansmt';
+  font-size: 1.8em;
+}
+
+.Titre_haut {
+  color: white;
+  font-family: '33535gillsansmt';
+  font-size: 1.8em;
+  margin: 0;
+  padding: 0;
+}
+
+.Fond_barre {
+  background-color: #212121;
+  border: 0;
+}
+
+.Bouton_texte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: '33535gillsansmt';
+  background-color: #6E0505;
+  border: 1px solid #212121;
+  width: 10em;
+  height: 3.5em;
+}
+
+.Principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.Texte {
+  text-decoration: none;
+}
+
+.Article_planning {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.Brouillons_data, .Articles_data, .Dossiers_data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.duree_data, .motif_data {
+  margin-right: 0.5em;
+  color: white;
+}
+
+.pseudo_data {
+  color: white;
+  margin-right: 0.25em;
+}
+
+.Page_suivante {
+  display: flex;
+  justify-content: center;
+}
+
+.Trait {
+  width: 100%;
+  border: 1px solid #212121;
+}
+
+.Titre_historique_data, .Date_historique_data, .Titre_dossier_data {
+  margin-right: 0.5em;
+  color: white;
+}
+
+.fleche_haut {
+  margin-left: 0.25em;
+  margin-top: 0.25em;
+  width: 10%;
+}
+
+.Margin_gauche {
+  margin-left: 1em;
+}
+
+.Bouton_action {
+  margin-right: 0.5em;
+}

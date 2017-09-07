@@ -1,0 +1,34 @@
+.FAQ_all {
+  border: solid 1px black;
+  background-color:#FAFAFA;
+}
+
+.FAQ_all h1 {
+  margin:0;
+  border-bottom: solid 1px black;
+  background-color: grey;
+}
+
+.hide_1 {
+  display: none;
+}
+
+.hide_2 {
+  display: none;
+}
+
+.hide_3 {
+  display: none;
+}
+
+.hide_4 {
+  display: none;
+}
+
+.hide_5 {
+  display: none;
+}
+
+.hide_6 {
+  display: none;
+}

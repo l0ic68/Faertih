@@ -1,0 +1,72 @@
+#Margin_gauche {
+  margin-left: 2em;
+}
+
+#Retour_accueil {
+  text-decoration: none;
+  color: #212121;
+  position: absolute;
+}
+
+#Bouton_planifier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.25em;
+}
+
+#Bouton_texte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: '33535gillsansmt';
+  background-color: #6E0505;
+  border: 1px solid #212121;
+  width: 10em;
+  height: 3.5em;
+}
+
+#Titre_prochains, #Titres_historiques {
+  font-family: '33535gillsansmt';
+  color: white;
+  font-size: 2em;
+}
+
+.fleche_haut {
+  margin-left: 0.25em;
+  margin-top: 0.25em;
+  width: 10%;
+}
+
+.Date_live {
+  font-family: '33535gillsansmt';
+  font-weight: bold;
+  color: #212121;
+  font-size: 1.1em;
+}
+
+.Un_live {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Date_historique, .Horaire_debut, .Horaire_fin, .Separation_horaire, .Nom_jeu {
+  color: white;
+}
+
+.Separation_horaire {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+.Nom_jeu {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.Bouton_action {
+  margin-right: 0.5em;
+}

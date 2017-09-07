@@ -1,0 +1,28 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Serveur.css') }}"/>
+{% endblock %}
+{% block body %}
+    <section>
+        <div id="Serveur_head">
+            <p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae
+                faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem
+                tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi
+                indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem
+                omnibusque armamentis instructam mari committat.</p>
+        </div>
+
+        <div id="Serveur_content">
+            <div id="Serveur_content_head">
+                <h1 class="Titre">Jeux</h1>
+                <h1 class="Titre"><a href="Event.html">Events</a></h1>
+            </div>
+            <div id="Serveur_content_data">
+                {% for serveur in serveurs %}
+                    <h2><a href="#"><img src="{{ asset(serveur.miniature.path) }}" alt="Trials Fusion" class="Jeux"></a></h2>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

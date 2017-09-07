@@ -1,0 +1,145 @@
+.Espace {
+  margin-right: 1em;
+}
+
+#Candidature_content {
+  width: 60%;
+  padding: 4%;
+  background-color: #313131;
+  border: solid #6E0505 2px;
+  margin: auto;
+  margin-top: 4em;
+}
+
+.Gras {
+  font-weight: bold;
+}
+
+.Candidature_content form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#Form_head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Devenir {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+#Devenir p {
+  width: 100%;
+  color: white;
+  font-family: '33535gillsansmt' !important;
+}
+
+.Devenir_content {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin:0;
+  color: white;
+  font-family: '33535gillsansmt' !important;
+}
+
+#Devenir hr {
+  border-color: black;
+  width: 60%;
+}
+
+.Candidature_box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 2%;
+}
+
+.Candidature_box label {
+  height: 10%;
+  padding-bottom: 2%;
+  color: white;
+  font-family: '33535gillsansmt' !important;
+}
+
+.Candidature_box textarea {
+  font-family: arial;
+  background-color: #212121;
+  border: none;
+  color: white;
+  margin: auto;
+  width: 95%;
+  height: 80%;
+}
+
+#Form_bottom {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Robot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+#Envoi {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#Envoi input {
+  width: 20%;
+}
+
+/* Pour les écrans inférieurs à 1024px de large */
+@media screen and (max-width: 1024px)
+{
+  .Candidature_content {
+    width: 99.5%;
+    min-height: 100%;
+    padding: 0%;
+    margin: 0;
+    border: solid black 2px;
+  }
+
+  .Form_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .Devenir {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .Devenir_content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin:0;
+  }
+
+  .Candidature_box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 25%;
+    margin-bottom: 2%;
+  }
+}

@@ -1,0 +1,139 @@
+hr {
+  width: 100%;
+  border: 1px solid #313131;
+}
+
+#Banner, #Banner_bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+#Banner {
+  border-bottom: 2px solid #6E0505;
+  width: 100%;
+  height: auto;
+}
+
+#Banner img {
+  width: 100%;
+  height: auto;
+}
+
+#Information {
+  display: flex;
+  flex-direction: row;
+  background-color: #313131;
+  border-bottom: 2px solid #212121;
+  color: white;
+  font-family: '33535gillsansmt';
+}
+
+#Info_data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  width: 30%;
+}
+
+#info_complementaire {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  align-items: center;
+}
+
+#Presentation {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.Img_reseau {
+  width: 50px;
+  height: 50px;
+  margin-left: 0.5em;
+}
+
+.Modif_texte {
+  color: white;
+  font-family: '33535gillsansmt';
+  font-size: 1.5em;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+
+.Banniere_image {
+  width: 100%;
+  height: auto;
+}
+
+.Information {
+  display: flex;
+  flex-direction: row;
+}
+
+.Bouton_notif {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Bouton_notif h1 {
+  margin-right: 0.5em;
+}
+
+.Season_ep {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.75em;
+}
+
+.Tiret {
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.Ligne_sous {
+  margin-left: 1em;
+}
+
+@media screen and (max-width: 1280px)
+{
+  #Information {
+    display: flex;
+    flex-direction: column;
+    background-color: #313131;
+    border-bottom: 2px solid #212121;
+    color: white;
+    font-family: '33535gillsansmt';
+  }
+
+  #Info_data {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    width: 100%;
+  }
+
+  #info_complementaire {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #212121;
+    border-bottom: 2px solid #212121;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  #Presentation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}

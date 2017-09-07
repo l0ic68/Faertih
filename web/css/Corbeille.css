@@ -1,0 +1,141 @@
+.Tete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Corbeille {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  background-color: #FAFAFA;
+}
+
+.Corbeille_nav {
+  width: 100%;
+  min-height: 3em;
+  background-color: grey;
+}
+
+.Corbeille_nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.Corbeille_nav ul li {
+  width: 33.3%;
+  min-height: 3em;
+  text-align: center;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+
+.Corbeille_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Corbeille_controler {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1%;
+}
+
+.Corbeille_controler p {
+  width: 30%;
+}
+
+.Corbeille_content hr {
+  width: 100%;
+  border-color: black;
+}
+
+.Corbeille_data {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: solid 1px black;
+}
+
+.Corbeille_user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 30%;
+  margin-left: 1%;
+}
+
+.Img_profil {
+  margin-right: 2%;
+}
+
+.msg_obj {
+  width: 30%;
+}
+
+.Corbeille_data_time {
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+}
+
+.Corbeille_data_time p {
+  margin: 0;
+}
+
+.msg_check {
+  position: absolute;
+  left: 85%;
+}
+
+@media screen and (max-width: 1024px)
+{
+  .Corbeille {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    background-color: #FAFAFA;
+  }
+
+  .Corbeille_nav {
+    width: 100%;
+    min-height: 9em;
+    background-color: grey;
+  }
+
+  .Corbeille_nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .Corbeille_nav ul li {
+    width: 100%;
+    min-height: 3em;
+    text-align: center;
+    border-bottom: 1px black solid;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .Img_profil {
+    display: none;
+  }
+}

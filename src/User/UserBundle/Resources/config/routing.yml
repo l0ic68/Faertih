@@ -1,0 +1,59 @@
+annuaire:
+    path:     /annuaire
+    defaults: { _controller: UserBundle:Annuaire:annuaire }
+
+annuaire_membres:
+    path:     /annuaire_membres
+    defaults: { _controller: UserBundle:Annuaire:annuairemembre }
+
+annuaire_equipe:
+    path:     /annuaire_equipe
+    defaults: { _controller: UserBundle:Annuaire:annuaireequipe }
+
+equipe:
+    path:     /equipe
+    defaults: { _controller: UserBundle:Equipe:equipe }
+
+nouveau_message:
+    path:     /nouveau_message
+    defaults: { _controller: UserBundle:Messagerie:nouveau_message }
+
+message_ouvert:
+    path:     /message_ouvert/{id}
+    defaults: { _controller: UserBundle:Messagerie:message_ouvert }
+
+boite_reception:
+    path:     /boite_reception
+    defaults: { _controller: UserBundle:Messagerie:boite_reception }
+
+creation_equipe:
+    path:     /creation_equipe
+    defaults: { _controller: UserBundle:Equipe:creation_team }
+
+description_equipe:
+    path:     /description_equipe
+    defaults: { _controller: UserBundle:Equipe:description_equipe }
+
+type_equipe:
+    path:     /type_equipe
+    defaults: { _controller: UserBundle:Equipe:type_equipe }
+
+mon_planning:
+    path:     /mon_planning
+    defaults: { _controller: UserBundle:Default:mon_planning }
+
+abonnement:
+    path:     /abonnement
+    defaults: { _controller: UserBundle:Default:abonnement }
+
+regarder_plus_tard:
+    path:     /regarder_plus_tard
+    defaults: { _controller: UserBundle:Default:regarder_plus_tard }
+
+tri_later_planning:
+    path:     /tri_later_planning
+    defaults: { _controller: UserBundle:Default:tri_later_planning }
+
+remove_later_planning:
+    path:     /remove_later_planning
+    defaults: { _controller: UserBundle:Default:remove_later_planning }

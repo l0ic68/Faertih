@@ -1,0 +1,476 @@
+#Fleche {
+<<<<<<< HEAD
+  position: relative;
+}
+
+#Recherche_Joeur_Content {
+  background-color: #212121;
+  min-height: 100vh;
+}
+
+#Recherche_tool {
+  width: 100%;
+  height: 2em;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Recherche_tool a {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+#Recherche_tool input {
+  width: 90%;
+  height: 100%;
+  font-size: 1.5em;
+  font-family: Arial;
+  color: white;
+  border: none;
+  background-color: #212121;
+}
+
+#Recherche_tool i {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #6E0505;
+    text-decoration: none;
+}
+
+#Recherche_tool #Ico_return {
+  color: white;
+}
+
+#First_Line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  height: 3em;
+  width: 100%;
+  color: white;
+  background-color: #6E0505;
+  border-bottom: solid #414141 2px;
+  font-family: '33535gillsansmt' !important;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.Recherche_Data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  height: 3em;
+  width: 100%;
+  border-bottom: solid #414141 2px;
+  font-family: '33535gillsansmt' !important;
+  font-weight: bold;
+  font-size: 1em;
+  color: #135A87;
+}
+
+.Div_pseudo {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-right: solid #313131 1px;
+  width: 14.28%;
+}
+
+.Div_rejoindre {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-left: solid #313131 1px;
+  background-color: #6E0505;
+  width: 14.28%;
+  color: white;
+}
+
+.Recherche_Data .Div_rejoindre:hover {
+  background-color: #BA0808;
+}
+
+.Div_date, .Div_jeu, .Div_contact, .Div_descriptif, .Div_nombre {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-left: solid #313131 1px;
+  border-right: solid #313131 1px;
+  width: 14.28%;
+}
+
+#add_Search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  text-decoration: none;
+  top: 75%;
+  right: 3%;
+  height: 4em;
+  width: 4em;
+  background-color: black;
+  border-radius: 100%;
+
+}
+
+#add_Search i {
+  font-size: 4em;
+  color: #313131;
+=======
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.Ensemble {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Recherche_tool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.Recherche {
+  display: flex;
+  width: 100%;
+}
+
+.Placement_centre {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Depot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: grey;
+  width: 100%;
+  height: 4em;
+  margin-bottom: 1em;
+}
+
+.Recherche_data {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.Recherche_result {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Div_pseudo {
+  display: flex;
+  border: 1px solid black;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+}
+
+.Div_date {
+  display: flex;
+  border: 1px solid black;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+}
+
+.Div_jeu {
+  display: flex;
+  border: 1px solid black;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+}
+
+.Div_contact {
+  display: flex;
+  border: 1px solid black;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+}
+
+.Div_descriptif {
+  display: flex;
+  border: 1px solid black;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+}
+
+.Description_mobile {
+  display: none;
+}
+
+.Div_nombre {
+  display: flex;
+  border: 1px solid black;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+}
+
+.Div_rejoindre {
+  display: flex;
+  border: 1px solid black;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+}
+
+.Ligne_pseudo {
+  display: flex;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.Ligne_date {
+  display: flex;
+  font-size: 1em;
+  width:
+}
+
+.Ligne_jeu {
+  display: flex;
+  font-size: 1em;
+  font-weight: bold;
+  width:
+}
+
+.Ligne_contact {
+  display: flex;
+  font-size: 1em;
+  width:
+}
+
+.Ligne_descriptif {
+  display: flex;
+  font-size: 1em;
+  width:
+}
+
+.Ligne_nombre {
+  display: flex;
+  font-size: 1em;
+  width:
+}
+
+.Bouton_rejoindre {
+  width: 100%;
+  height: 4.8em;
+}
+
+@media screen and (max-width: 1024px)
+{
+  #Fleche {
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+
+  .Ensemble {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:0;
+  }
+
+  .Recherche_tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .Recherche {
+    display: flex;
+    width: 100%;
+  }
+
+  .Placement_centre {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Depot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: grey;
+    width: 100%;
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .Recherche_data {
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Recherche_result {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+  }
+
+  .Div_pseudo {
+    display: flex;
+    border: 1px solid black;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+  }
+
+  .Div_date {
+    display: flex;
+    border: 1px solid black;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+  }
+
+  .Div_jeu {
+    display: flex;
+    border: 1px solid black;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+  }
+
+  .Div_contact {
+    display: flex;
+    border: 1px solid black;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+  }
+
+  .Div_descriptif {
+    display: none;
+  }
+
+  .Description_mobile {
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  .Div_nombre {
+    display: flex;
+    border: 1px solid black;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+  }
+
+  .Div_rejoindre {
+    display: flex;
+    border: 1px solid black;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+  }
+
+  .Ligne_pseudo {
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .Ligne_date {
+    display: flex;
+    font-size: 1em;
+    width:
+  }
+
+  .Ligne_jeu {
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+    width:
+  }
+
+  .Ligne_contact {
+    display: flex;
+    font-size: 1em;
+    width:
+  }
+
+  .Ligne_descriptif {
+    display: flex;
+    font-size: 1em;
+    width:
+  }
+
+  .Ligne_nombre {
+    display: flex;
+    font-size: 1em;
+    width:
+  }
+
+  .Bouton_rejoindre {
+    width: 100%;
+    height: 4.8em;
+  }
+>>>>>>> f313f9e39c7eb234d18d5c34b10d1964dd35f0c5
+}

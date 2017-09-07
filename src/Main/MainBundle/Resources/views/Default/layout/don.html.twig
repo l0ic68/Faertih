@@ -1,0 +1,73 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Don.css') }}"/>
+{% endblock %}
+{% block body %}
+
+    <section id="content_don">
+
+        <div id="Haut">
+            <div id="Bloc_Gauche">
+                <img src="http://placehold.it/1000x200" alt="baniere créateur" id="Baniere_Createur"/>
+                <select name="PSEUDO" id="Pseudo_don">
+                    {% for don in dons %}
+                    <option value="{{ don.user }}">{{ don.user.nom }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div id="Bloc_droit">
+                <p id="Texte_pres">Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat.</p>
+            </div>
+        </div>
+
+
+        <div id="Section_don">
+            <div class="don_box">
+                <h1 class="Hauteur_don">Paypal</h1>
+                <hr class="Separation">
+                <p class="Blabla">{{ firstDon.paypal }}</p>
+                <hr class="Separation2">
+                <a href="{{ firstDon.paypallien }}" class="bouton-relief">Faire un don</a>
+            </div>
+            <div class="don_box">
+                <h1 class="Hauteur_don">Tipeee</h1>
+                <hr class="Separation">
+                <p class="Blabla">{{ firstDon.tipeee }}</p>
+                <hr class="Separation2">
+                <a href="{{ firstDon.tipeeelien }}" class="bouton-relief">Faire un don</a>
+            </div>
+            <div class="don_box">
+                <h1 class="Hauteur_don">TwitchAlerts</h1>
+                <hr class="Separation">
+                <p class="Blabla">{{ firstDon.twitchAlerts }}</p>
+                <hr class="Separation2">
+                <a href="{{ firstDon.twitchAlertslien }}" class="bouton-relief">Faire un don</a>
+            </div>
+        </div>
+    </section>
+    {% block javascripts %}
+<script type="text/javascript">
+    $(function(){
+        $('#Pseudo_don').on('change', function()
+        {
+        var e = document.getElementById("Pseudo_don");
+        var user = e.options[e.selectedIndex].value;
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "{{ path('donUser') }}",
+                cache: false,
+                data: { text: user},
+                success:function(response){
+                    $('#Section_don').replaceWith(response.classifiedList);
+                },
+                error:function(response){
+                    console.log(response);
+                }
+            });
+        });
+    });
+</script>
+    {% endblock %}
+{% endblock %}
+

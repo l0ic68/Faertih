@@ -1,0 +1,323 @@
+.Barre_nav {
+  display: flex;
+  width: 100%;
+}
+
+.Titre {
+  display: flex;
+  font-size: 1.65em;
+  margin: 0;
+  width: 30%;
+}
+
+.Planning_nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.Planning_date {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: center;
+}
+
+.Droit {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: flex-end;
+}
+
+.Planning_switch {
+  display: flex;
+  flex-direction: row;
+}
+
+.Mon_planning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.Jour {
+  display: flex;
+  min-width: 2em;
+  min-height: 2em;
+  max-width: 2em;
+  max-height: 2em;
+}
+
+.Date {
+  display: flex;
+  font-size: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.Trait {
+  width: 30%;
+  border: 1px solid black;
+  margin-bottom: 2em;
+}
+
+.Trait_mobile {
+  display: none;
+}
+
+.Element {
+  display: flex;
+  flex-direction: column;
+}
+
+.Planning_data {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em;
+}
+
+.Day {
+  display: flex;
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.Hour {
+  display: flex;
+  font-size: 1em;
+  margin: 0;
+  margin-right: 1em;
+}
+
+.Name {
+  display: flex;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  margin-right: 0.5em;
+}
+
+@media screen and (max-width: 1280px) {
+  .Barre_nav {
+    display: flex;
+    width: 100%;
+  }
+
+  .Titre {
+    display: flex;
+    font-size: 1.65em;
+    margin: 0;
+    width: 30%;
+  }
+
+  .Planning_nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .Planning_date {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: center;
+  }
+
+  .Droit {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: flex-end;
+  }
+
+  .Planning_switch {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Mon_planning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10%;
+  }
+
+  .Jour {
+    display: flex;
+    min-width: 2em;
+    min-height: 2em;
+    max-width: 2em;
+    max-height: 2em;
+  }
+
+  .Date {
+    display: flex;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .Trait {
+    width: 30%;
+    border: 1px solid black;
+  }
+
+  .Trait_mobile {
+    display: none;
+  }
+
+  .Element {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Planning_data {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5em;
+  }
+
+  .Day {
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .Hour {
+    display: flex;
+    font-size: 1em;
+    margin: 0;
+    margin-right: 1em;
+  }
+
+  .Name {
+    display: flex;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    margin-right: 0.5em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Barre_nav {
+    display: flex;
+    width: 100%;
+  }
+
+  .Titre {
+    display: none;
+    font-size: 1.65em;
+    margin: 0;
+    width: 30%;
+  }
+
+  .Planning_nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+
+  .Planning_date {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Droit {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .Planning_switch {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Mon_planning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10%;
+  }
+
+  .Jour {
+    display: flex;
+    min-width: 2em;
+    min-height: 2em;
+    max-width: 2em;
+    max-height: 2em;
+  }
+
+  .Date {
+    display: flex;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .Trait {
+    display: none;
+    width: 30%;
+    border: 1px solid black;
+    margin-bottom: 1em;
+  }
+
+  .Trait_mobile {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 100%;
+    margin: 0;
+  }
+
+  .Element {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Planning_data {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5em;
+  }
+
+  .Day {
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .Hour {
+    display: flex;
+    font-size: 1em;
+    margin: 0;
+    margin-right: 1em;
+  }
+
+  .Name {
+    display: flex;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    margin-right: 0.5em;
+  }
+}

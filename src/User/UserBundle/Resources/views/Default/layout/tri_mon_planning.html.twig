@@ -1,0 +1,53 @@
+<div id="trie_planning">
+    {% if not user.later.empty %}
+        {% for later in user.later %}
+            {% if later.article is empty %}
+                <div class="Mon_planning_a_regarder_data">
+                    <div class="Prochain_row">
+                        <a href="{{ path('lecture_video',{id: later.video.id}) }}">
+                            <img src="{{ asset(later.video.miniature.path) }}" alt="#" class="Img_regarder">
+                        </a>
+                        <h1 class="Contenu">{{ later.video.titre }}</h1>
+                        <i class="fa fa-youtube-play fa-2x Youtube_Play"></i>
+                        <i class="fa fa-times fa-2x Cross_icone delete" id="{{ later.video.id}} video"></i>
+                    </div>
+                </div>
+            {% else %}
+                <div class="Mon_planning_a_regarder_data">
+                    <div class="Prochain_row">
+                        <a href="{{ path('lecture_article',{id: later.article.id}) }}">
+                            <img src="{{ asset(later.article.miniature.path) }}" alt="#" class="Img_regarder">
+                        </a>
+                        <h1 class="Contenu">{{ later.article.titre }}</h1>
+                        <i class="fa fa-pencil fa-2x Pencil_icone"></i>
+                        <i class="fa fa-times fa-2x Cross_icone delete" id="{{ later.article.id}} article"></i>
+                    </div>
+                </div>
+                {#<i class="fa fa-twitch fa-2x Twitch_icone"></i>#}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</div>
+{% block javascripts %}
+    <script type="text/javascript">
+        $(function () {
+            $('.delete').on('click', function () {
+                var id = $(this).attr("id");
+                $.ajax({
+                    type: "GET",
+                    dataType: "json",
+                    url: "{{ path('remove_later_planning') }}",
+                    cache: false,
+                    data: {id: id},
+                    success: function (response) {
+                        $('#trie_planning').replaceWith(response.classifiedList);
+                    },
+                    error: function (response) {
+                        console.log(response);
+                    }
+                });
+            });
+        });
+    </script>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/equipe.css') }}"/>
+{% endblock %}
+{% block body %}
+<section id="Ensemble">
+    <div id="Equipe_name">
+        <div id="Equipe_Container">
+            <select name="Role" id="Role">
+                <option value="Administrateurs">Administrateurs</option>
+                <option value="Moderateurs">Moderateurs</option>
+                <option value="Streamers">Streamers</option>
+                <option value="Videastes">Videastes</option>
+                <option value="Redacteurs">Redacteurs</option>
+            </select>
+            <div id="Profil_all">
+                <img src="http://via.placeholder.com/350x350" alt="#" class="Profil_pic">
+                <img src="http://via.placeholder.com/350x350" alt="#" class="Profil_pic">
+                <img src="http://via.placeholder.com/350x350" alt="#" class="Profil_pic">
+                <img src="http://via.placeholder.com/350x350" alt="#" class="Profil_pic">
+                <img src="http://via.placeholder.com/350x350" alt="#" class="Profil_pic">
+                <img src="http://via.placeholder.com/350x350" alt="#" class="Profil_pic">
+                <img src="http://via.placeholder.com/350x350" alt="#" class="Profil_pic">
+                <img src="http://via.placeholder.com/350x350" alt="#" class="Profil_pic">
+                <img src="http://via.placeholder.com/350x350" alt="#" class="Profil_pic">
+                <img src="http://via.placeholder.com/350x350" alt="#" class="Profil_pic">
+                <img src="http://via.placeholder.com/350x350" alt="#" class="Profil_pic">
+            </div>
+            <a href="Candidature.html" class="Candidature">Envie de rejoindre l'équipe de Faerith's ? Déposez votre candidature !<span class="icon-send"></span></a>
+        </div>
+    </div>
+    <div id="Equipe_detail">
+        <div id="Detail_Container">
+            <div id="First_Line">
+                <h1 id="Pseudo">Pseudo</h1>
+                <h2 id="Rang">Test</h2>
+            </div>
+            <hr id="Trait">
+            <p id="Description"><img src="http://via.placeholder.com/350x350" alt="#" class="Mini_pic">Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat.</p>
+            <hr id="Trait_social">
+            <div id="Equipe_social">
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-facebook-square"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-twitter-square"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-tumblr-square"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-instagram2"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-youtube"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-twitch"></span></a>
+                <a href="#" target="_blank" class="Footer_Icone"><span class="icon-soundcloud"></span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

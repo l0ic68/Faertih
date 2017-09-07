@@ -1,0 +1,30 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Forum.css') }}"/>
+{% endblock %}
+{% block body %}
+
+    <section>
+        <img src="http://placehold.it/1200x200" alt="#" class="Forum_banner">
+        <div>
+            <p></p>
+            <input name="search" type="search" class="Recherche_forum">
+        </div>
+        <div id="Forum">
+            <div class="Forum_content">
+                <h1>General</h1>
+                <a href="#"><img src="http://placehold.it/320x180" alt="#" class="Forum_picture"></a>
+            </div>
+            <hr/>
+            <div class="Forum_content">
+                <h1>Serveurs de Jeux</h1>
+                <a href="#"><img src="http://placehold.it/320x180" alt="#" class="Forum_picture"></a>
+            </div>
+            <hr/>
+            <div class="Forum_content">
+                <h1>Categorie</h1>
+                <a href="#"><img src="http://placehold.it/320x180" alt="#" class="Forum_picture"></a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

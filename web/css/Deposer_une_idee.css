@@ -1,0 +1,107 @@
+fieldset {
+  border: 2px solid black;
+  min-width: 50%;
+}
+
+#Message {
+  display: flex;
+  min-width: 50%;
+  min-height: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+#titre {
+  display: flex;
+  min-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.Title_idee {
+  display: flex;
+  justify-content: center;
+}
+
+.Fleche {
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.Placement {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.Titre {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.Envoyer {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  fieldset {
+    border: 2px solid black;
+    min-width: 90%;
+  }
+
+  #Message {
+    display: flex;
+    min-width: 90%;
+    min-height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+
+  #titre {
+    display: flex;
+    min-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .Title_idee {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Fleche {
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+
+  .Placement {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .Titre {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .Envoyer {
+    display: flex;
+    justify-content: center;
+  }
+}

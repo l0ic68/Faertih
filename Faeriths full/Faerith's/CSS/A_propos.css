@@ -1,0 +1,96 @@
+#Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #313131;
+  padding-left: 5em;
+  padding-right: 5em;
+  width: 50%;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding-bottom: 3em;
+  border: 2px solid #6e0505;
+}
+
+#Main_Titre {
+  font-size: 2em;
+  margin: 0;
+  margin-top: 1em;
+  color: #135a87;
+  font-family: '33535gillsansmt' !important;
+}
+
+#Trait {
+  border: solid #212121 2px;
+  width: 40%;
+  margin-left: 0;
+}
+.Texte {
+  color: white;
+  font-family: arial;
+}
+
+.Pseudo h2 {
+  color: #BA0808;
+  font-family: '33535gillsansmt' !important;
+}
+
+.Bold {
+  font-weight: bold;
+}
+.Pseudo p {
+  color: white;
+  font-family: arial;
+  margin-left: 1em;
+}
+.Photo_Profil {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Image {
+  width: 10em;
+  height: 10em;
+}
+
+@media screen and (max-width: 1280px) {
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid black;
+  }
+
+  .Titre {
+    font-size: 2em;
+    margin-left: 0.5em;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+  }
+
+  .Texte {
+    display: flex;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .Esuria, .Nargash, .iWanTeeeeeeD {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .Photo_Esuria {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Image {
+    width: 40%;
+    height: 40%;
+  }
+}

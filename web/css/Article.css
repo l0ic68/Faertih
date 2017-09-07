@@ -1,0 +1,249 @@
+#Article_header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 25em;
+}
+
+#Article_header_data_main {
+  height: auto;
+  width: 50%;
+  margin:0;
+}
+
+#Article_header_data_main img {
+  height: 100%;
+  width: 100%;
+  margin:0;
+}
+
+#Article_header_second {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+}
+
+.Article_header_data {
+  height: 50%;
+  width: 50%;
+  margin:0;
+}
+
+.Article_header_data img {
+  height: 100%;
+  width: 100%;
+  margin:0;
+}
+
+.Article_header_data h1 {
+  position :relative;
+  top : -2.25em;
+  width: 100%;
+  color: white;
+  font-family: '33535gillsansmt' !important;
+  border-top: solid #00BA35 2px;
+  background-color: rgba(1, 1, 1, 0.5);
+
+}
+
+#Article_header_data_main h1 {
+  position :relative;
+  top : -2.25em;
+  width: 100%;
+  color: white;
+  font-family: '33535gillsansmt' !important;
+  border-top: solid #00BA35 2px;
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+#Article_nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 3em;
+  border-bottom: #00BA35 solid 1px;
+  background-color:#313131;
+}
+#Article_nav p {
+  width: 30%;
+  color: white;
+  font-family: '33535gillsansmt' !important;
+  font-size: 1.3em;
+  margin-left: 2%;
+}
+
+#Article_nav_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+}
+
+.Article_nav_content_data {
+  width: 100%;
+}
+
+.Article_nav_content_data select {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  background-color:#313131;
+  border: none;
+  font-family: '33535gillsansmt' !important;
+}
+
+#Article_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.Article_data {
+  width: 15em;
+  margin-right: 0em;
+  margin-left: 0em;
+  margin-bottom: 1em;
+}
+
+.Article_data img {
+  width: 100%;
+  height: 9em;
+  margin: 0;
+}
+
+.Article_data h1 {
+  position :relative;
+  top : -2.25em;
+  width: 100%;
+  color: white;
+  font-family: '33535gillsansmt' !important;
+  border-top: solid #00BA35 2px;
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+
+
+/* Pour les écrans inférieurs à 1024px de large */
+@media screen and (max-width: 1024px)
+{
+  #Article_header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  #Article_header_data_main {
+    height: 50%;
+    width: 100%;
+    margin:0;
+    background-color: blue;
+  }
+
+  #Article_header_data_main img {
+    height: 100%;
+    width: 100%;
+    margin:0;
+  }
+
+  #Article_header_second {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+  }
+
+  .Article_header_data {
+    height: 25%;
+    width: 100%;
+    margin:0;
+    background-color: red;
+  }
+
+  .Article_header_data img {
+    height: 100%;
+    width: 100%;
+    margin:0;
+  }
+
+  .Article_header_data h1 {
+    position :relative;
+    top : -30%;
+    width: 100%;
+    background-color: grey;
+    opacity: 0.5;
+
+  }
+
+  #Article_header_data_main h1 {
+    position :relative;
+    top : -15%;
+    width: 100%;
+    background-color: grey;
+    opacity: 0.5;
+  }
+
+  #Article_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 4%;
+    border-bottom: black solid 1px;
+    background-color:#FAFAFA;
+  }
+  #Article_nav p {
+    width: 20%;
+    margin-left: 2%;
+  }
+
+  #Article_nav_content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Article_nav_content_data {
+    width: 25%;
+  }
+
+  .Article_nav_content_data select {
+    width: 100%;
+    height: 100%;
+  }
+
+  #Article_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+
+  }
+
+  .Article_data {
+    width: 40%;
+    margin-bottom: 10%;
+  }
+
+  .Article_data img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .Article_data h1 {
+    margin: 0;
+  }
+}

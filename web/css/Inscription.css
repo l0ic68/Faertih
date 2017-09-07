@@ -1,0 +1,167 @@
+fieldset {
+  border: 2px solid black;
+}
+
+#Lel {
+  display: flex;
+  justify-content: center;
+}
+
+#facebook, #instagram, #twitter, #twitch, #youtube, #discord {
+  height: 1em;
+  width: 100%;
+}
+
+#e-mail, #pseudo, #pass, #pass_re, #âge, #nom, #prenom {
+  width: 50%;
+  margin-bottom: 1em;
+}
+
+.Encadrement {
+    border: 2px solid black;
+}
+
+.Trait {
+  border: 1px solid black;
+  width: 80%;
+}
+
+.Change {
+  font-weight: bold;
+}
+
+.Ensemble {
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+.Bout {
+  display: flex;
+  flex-direction: row;
+}
+
+.Enfin {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.Ligne {
+  display: flex;
+  flex-direction: row;
+  margin-right: 4%;
+  width: 30%;
+}
+
+.Barre {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+}
+
+.Inscrire {
+  width: 50%;
+}
+
+.Gauche_droite {
+  display: flex;
+}
+
+.Gauche {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.Droit {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.Bonsoir {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.Picto {
+  display: flex;
+  width: 3em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+.Petite_separation {
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1024px)
+{
+  fieldset {
+    border: 0px solid black;
+  }
+
+  #Lel {
+    display: flex;
+    justify-content: center;
+  }
+
+  #e-mail, #pseudo, #pass, #pass_re, #âge, #nom, #prenom {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  #facebook, #instagram, #twitter, #twitch, #youtube, #discord {
+    height: 1em;
+    width: 100%;
+  }
+
+  #origin, #uplay, #psn, #xbox_live, #GOG, #nintendo, #battle_net, #steam, #jeux_favoris {
+    width: 100%;
+  }
+
+  .Encadrement {
+      border: 2px solid black;
+  }
+
+  .Ligne {
+    width: 7em;
+  }
+
+  .Ensemble {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0em;
+  }
+
+  .Bout {
+    display: flex;
+    flex-direction: column;;
+  }
+
+  .Inscrire {
+    width: 100%;
+  }
+
+  .Gauche_droite {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Gauche {
+    width: 100%;
+  }
+
+  .Droit {
+    width: 100%;
+  }
+
+}

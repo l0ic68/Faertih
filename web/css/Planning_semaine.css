@@ -1,0 +1,317 @@
+#Barre_nav {
+  display: flex;
+  width: 100%;
+  background-color: #212121;
+  border: 0px;
+  height: 2.5em;
+  color: #BA0808;
+  font-size: 1em;
+  font-family: '33535gillsansmt';
+  font-weight: bold;
+}
+
+#Titre {
+  display: flex;
+  font-size: 1.65em;
+  width: 30%;
+}
+
+#Gros_Titre {
+  display: none;
+}
+
+#Espace_jour {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+#Jour {
+  color: white;
+  text-decoration: none;
+}
+
+#Semaine {
+  text-decoration: none;
+  font-weight: bold;
+  color: #BA0808;
+}
+
+#Titre, #Mon_planning {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.3em;
+  padding-top: 0.3em;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+#Planning_nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  background-color: #313131;
+  border-bottom: 2px solid #6E0505;
+  font-family: '33535gillsansmt';
+  color: white;
+}
+
+#Planning_date {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+#Droit {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: flex-end;
+}
+
+#Planning_switch {
+  display: flex;
+  flex-direction: row;
+}
+
+#Mon_planning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+}
+
+#Mon_planning a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: '33535gillsansmt';
+}
+
+#Mon_planning i {
+  margin-right: 0.3em;
+}
+
+#Date {
+  display: flex;
+  font-size: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#Element {
+  display: flex;
+  flex-direction: column;
+}
+
+.Planning_data {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.Bandeau_date {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 0.5em;
+  background-color: #212121;
+  align-items: center;
+  height: 2.5em;
+  justify-content: space-between;
+}
+
+.Day {
+  color: white;
+  font-family: '33535gillsansmt';
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+.Selection_jour {
+  color: #BA0808;
+  margin-right: 0.5em;
+}
+
+.Image_profil {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.Hour, .Name {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.1em;
+  color: white;
+  font-family: '33535gillsansmt';
+  margin-right: 0.75em;
+}
+
+.Angle_gauche, .Angle_droit {
+  color: #212121;
+}
+
+.Angle_gauche {
+  margin-right: 0.5em;
+}
+
+.Angle_droit {
+  margin-left: 0.5em;
+}
+
+.Twitch_element {
+  margin-left: 0.5em;
+  color: #6441a5;
+}
+
+.Youtube_element {
+  margin-left: 0.5em;
+  color: #6E0505;
+}
+
+.Pencil_element {
+  margin-left: 0.5em;
+  color: #135A87;
+}
+
+.Plus_icone {
+  margin-left: 0.5em;
+  color: #212121;
+}
+
+@media screen and (max-width: 1024px) {
+  #Barre_nav {
+    display: flex;
+    width: 100%;
+  }
+
+  #Titre {
+    display: none;
+  }
+
+  #Gros_Titre {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #212121;
+    width: 100%;
+    margin: 0;
+    padding: 0.5em;;
+    font-size: 1.7em;
+  }
+
+  #Planning_date {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #212121;
+    width: 100%;
+  }
+
+  #Planning_nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+
+  #Planning_switch {
+    margin-left: 1em;
+  }
+
+  #Droit {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #Mon_planning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1em;
+  }
+
+  #Date {
+    display: flex;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #Element {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Planning_data {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5em;
+  }
+
+  .Bandeau_date {
+    height: 3em;
+  }
+
+  .Day {
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0em;
+    margin-left: 0.5em;
+  }
+
+  .Hour {
+    display: flex;
+    font-size: 1em;
+    margin: 0;
+    margin-right: 1em;
+  }
+
+  .Name {
+    display: flex;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    margin-right: 0.5em;
+  }
+
+  .Trait {
+    display: none;
+    width: 30%;
+    border: 1px solid black;
+    margin-bottom: 1em;
+  }
+
+  .Trait_mobile {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 100%;
+    margin: 0;
+  }
+
+  .Planning_date {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Planning_switch {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,88 @@
+#Retour_accueil {
+  text-decoration: none;
+  color: #212121;
+  position: absolute;
+}
+
+#Bouton_planifier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.25em;
+}
+
+.Titre {
+  color: white;
+  font-family: '33535gillsansmt';
+  font-size: 1.8em;
+}
+
+.Bouton_texte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: '33535gillsansmt';
+  background-color: #6E0505;
+  border: 1px solid #212121;
+  width: 10em;
+  height: 3.5em;
+}
+
+.Principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.Texte {
+  text-decoration: none;
+}
+
+.Article_planning {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.Brouillons_data, .Articles_data, .Dossiers_data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Titre_brouillon_data {
+  margin-right: 0.5em;
+  color: white;
+}
+
+.Page_suivante {
+  display: flex;
+  justify-content: center;
+}
+
+.Trait {
+  width: 100%;
+  border: 1px solid #212121;
+}
+
+.Titre_historique_data, .Date_historique_data, .Titre_dossier_data {
+  margin-right: 0.5em;
+  color: white;
+}
+
+.fleche_haut {
+  margin-left: 0.25em;
+  margin-top: 0.25em;
+  width: 10%;
+}
+
+.Margin_gauche {
+  margin-left: 1em;
+}
+
+.Bouton_action {
+  margin-right: 0.5em;
+}

@@ -1,0 +1,98 @@
+.Jeux_head {
+  width: 100%;
+}
+
+.Jeux_head select {
+  width: 100%;
+  margin: 0;
+}
+
+.Banniere_image {
+  width: 100%;
+  height: auto;
+}
+
+.Jeux_nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-bottom: black solid 1px;
+  background-color:#FAFAFA;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Jeux_nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+
+.Jeux_nav ul li {
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: solid 1px black;
+}
+
+.Jeux_content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Jeux_article {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 60%;
+  padding: 1%;
+}
+
+.Jeux_article h1, .Jeux_article h2 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.Article_id {
+  width: 100%;
+  text-align: center;
+}
+.Jeux_article_partage {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Jeux_article_partage img {
+  width: 2em;
+  height: 2em;
+}
+
+.Jeux_article_social {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Jeux_article_social a {
+  display: block;
+  width: 33.3%;
+  border: solid 1px black;
+  background-color: grey;
+  text-align: center;
+}
+@media screen and (max-width: 1024px)
+{
+  .Jeux_article {
+    width: 90%;
+  }
+}

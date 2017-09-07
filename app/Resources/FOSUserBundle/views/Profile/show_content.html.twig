@@ -1,0 +1,170 @@
+{% trans_default_domain 'FOSUserBundle' %}
+ {% block stylesheets %}
+     <link type="text/css" rel="stylesheet" href="{{ asset('css/Profil.css') }}"/>
+ {% endblock %}
+<section>
+    <!-- header : baniere, image de profil, pseudo ect -->
+    <header id="profil_header">
+        <!-- banniere -->
+        <div id="Banner">
+            <img src="{{ asset(user.banniere.path) }}" alt="banniere de profil" class="banniere_profil">
+        </div>
+        <!-- bloc info -->
+        <div id="Banner_bottom">
+            <!-- info utilisateur -->
+            <div id="Utilisateur">
+                <!-- image profil -->
+                <div id="Header_Info">
+                    <div id="Profil_pic">
+                        <img src="{{ asset(user.media.path) }}" alt="image de profil" class="profil_picture"/>
+                    </div>
+                    <i class="fa fa-upload fa-2x" id="Icone_blanc"></i>
+                    <div id="IMG_Info">
+                        <div id="user_id">
+                            <div id="Live_ON"></div>
+                            <h1 id="Pseudo_font">{{ user.username }}</h1>
+                        </div>
+                        <div id="user_info">
+                            <h2 class="user_size">{{ user.nom }}</h2>
+                            <p class="Separation_info">|</p>
+                            <h2 class="user_size">{{ user.prenom }}</h2>
+                            <p class="Separation_info">|</p>
+                            <h2 class="user_size">{{ age }}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="info_complementaire">
+                <div id="Discord_ID">
+                    <img/>
+                    {% if not user.social.discord is empty %}
+                    <p>{{ user.social.discord }}</p>
+                    {% else %}
+                    <p>Pas d'ID Discord</p>
+                    {% endif %}
+                </div>
+                <div id="Calendrier">
+                    <i class="fa fa-calendar fa-2x"></i>
+                    <p id="Inscrit">{{ user.creation|date() }}</p>
+                </div>
+            </div>
+            <!-- presentation -->
+            <div id="Presentation">
+                <p>{{ user.description }}</p>
+                <i class="fa fa-pencil-square-o Modif_description fa-2x"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- reste du profil -->
+    <div id="Ensemble_box">
+        <div id="box_profil_gauche">
+            <!-- ID de jeux -->
+            <div class="box_profil">
+                <h1 class="Titre_decale">ID de Jeux |</h1>
+                <div id="Icones_jeux">
+                    <div id="Ranger_un">
+                        <div id="Steam_total">
+                            <img src="../Images/Jeux/Steam.png" alt="Steam" class="Jeux_Images"/>
+                            <p id="Pseudo_Steam">Pseudo</p>
+                        </div>
+                        <div id="Origin_total">
+                            <img src="../Images/Jeux/Origin.png" alt="Origin" class="Jeux_Images"/>
+                            <p id="Pseudo_Origin">Pseudo</p>
+                        </div>
+                        <div id="Uplay_total">
+                            <img src="../Images/Jeux/Uplay.png" alt="Uplay" class="Jeux_Images"/>
+                            <p id="Pseudo_Uplay">Pseudo</p>
+                        </div>
+                    </div>
+                    <div id="Ranger_deux">
+                        <div id="PSN_total">
+                            <img src="../Images/Jeux/PSN.png" alt="Playstation Network" class="Jeux_Images"/>
+                            <p id="Pseudo_PSN">Pseudo</p>
+                        </div>
+                        <div id="Xbox_total">
+                            <img src="../Images/Jeux/Xbox.png" alt="Xbox Live" class="Jeux_Images"/>
+                            <p id="Pseudo_Xbox">Pseudo</p>
+                        </div>
+                        <div id="Nintendo_total">
+                            <img src="../Images/Jeux/Nintendo_network.png" alt="Nintendo Network" class="Jeux_Images"/>
+                            <p id="Pseudo_Nintendo">Pseudo</p>
+                        </div>
+                    </div>
+                    <div id="Ranger_trois">
+                        <div id="GoG_total">
+                            <img src="../Images/Jeux/GoG.png" alt="GoG" class="Jeux_Images"/>
+                            <p id="Pseudo_GoG">Pseudo</p>
+                        </div>
+                        <div id="Battle_total">
+                            <img src="../Images/Jeux/Battle.png" alt="Battle Net" class="Jeux_Images"/>
+                            <p id="Pseudo_Blizzard">Pseudo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- reseau sociaux -->
+            <div class="box_profil">
+                <h1 class="Titre_decale">Réseaux Sociaux |</h1>
+                <div id="box_profil_square">
+                    <i class="fa fa-facebook-square fa-2x"></i>
+                    <i class="fa fa-twitter fa-2x"></i>
+                    <i class="fa fa-tumblr fa-2x"></i>
+                    <i class="fa fa-instagram fa-2x"></i>
+                    <i class="fa fa-youtube-play fa-2x"></i>
+                    <i class="fa fa-twitch fa-2x"></i>
+                    <i class="fa fa-soundcloud fa-2x"></i>
+                </div>
+            </div>
+
+            <!-- Succes -->
+            <div class="box_profil">
+                <h1 class="Titre_decale">Succès |</h1>
+                <div class="box_profil_square">
+                    <img src="#" alt="#"/>
+                </div>
+            </div>
+        </div>
+
+        <div id="box_profil_droite">
+            <!-- Equipe -->
+            <div class="box_profil">
+                <h1 class="Titre_decale">Equipes |</h1>
+                <div id="Equipes_lignes">
+                    {% if not user.team.empty %}
+                        {% for team in user.team %}
+                            <div class="box_profil_pic">
+                                {#<img src="{{ asset(team.logoteam.path) }}" alt="#"/>#}
+                                <img src="http://via.placeholder.com/175x175" alt="#"/>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    <a href="{{ path('annuaire') }}"><i class="fa fa-plus-square fa-4x"></i></a>
+                </div>
+            </div>
+
+            <!-- Serveur -->
+            <div class="box_profil">
+                <h1 class="Titre_decale">Serveurs |</h1>
+                <div id="Serveurs_ligne">
+                    <div class="box_profil_pic">
+                        <img src="http://via.placeholder.com/175x175" alt="#"/>
+                    </div>
+                    <div class="box_profil_pic">
+                        <img src="http://via.placeholder.com/175x175" alt="#"/>
+                    </div>
+                    <i class="fa fa-plus-square fa-4x"></i>
+                </div>
+            </div>
+
+            <!-- jeux favoris -->
+            <div class="box_profil">
+                <h1 class="Titre_decale">Jeux Favoris |</h1>
+                <div class="box_profil_pic">
+                    <img src="#" alt="#"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

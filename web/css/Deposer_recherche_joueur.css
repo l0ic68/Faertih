@@ -1,0 +1,89 @@
+#Message {
+  height: 5em;
+}
+
+#Fleche {
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+#Deposer_recherche_joueur {
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+  width: 25%;
+  height: 21em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0em;
+}
+
+#Colonne {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+.Espace {
+  background-color: #313131;
+  color: white;
+  font-family: Arial;
+  border: none;
+  margin-bottom: 1em;
+}
+
+.Texte {
+  margin-bottom: 0.2em;
+  color: white;
+  font-family: '33535gillsansmt' !important;
+}
+
+#envoi {
+    border: none;
+    color: white;
+    background-color: #6E0505;
+    width: 50%;
+    margin: auto;
+}
+
+#envoi:hover {
+    background-color: #BA0808;
+}
+
+@media screen and (max-width: 1024px)
+{
+  #Message {
+    height: 5em;
+  }
+
+  .Deposer_recherche_joueur {
+    display: flex;
+    flex-direction: column;
+    border: 0px solid black;
+    width: 100%;
+    height: 21em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+  }
+
+  .Colonne {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+  }
+
+  .Espace {
+    margin-bottom: 1em;
+  }
+
+  .Texte {
+    margin-bottom: 0.2em;
+  }
+}

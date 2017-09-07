@@ -1,0 +1,57 @@
+.Forum_banner {
+    width: 100%;
+    height: auto;
+}
+
+#Forum {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 70em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.Recherche_forum {
+  position: absolute;
+  right: 1%;
+  width: 15%;
+}
+
+.Forum_picture {
+  height: auto;
+  width: 20%;
+}
+
+.Forum_content {
+  margin-bottom: 5%;
+}
+
+hr {
+  width: 70%;
+  border-color: black;
+}
+/* Pour les écrans inférieurs à 1024px de large */
+@media screen and (max-width: 1024px)
+{
+  #Forum {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .Recherche_forum {
+    position: absolute;
+    right: 1%;
+    width: 25%;
+  }
+
+  .Forum_picture {
+    height: auto;
+    width: 25%;
+  }
+}

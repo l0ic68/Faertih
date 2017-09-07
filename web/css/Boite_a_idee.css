@@ -1,0 +1,160 @@
+section {
+  margin-left: 3em;
+}
+
+#Titre {
+  font-size: 1.5em;
+  color: white;
+  font-family: '33535gillsansmt' !important;
+}
+
+#Recherche_idee {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40em;
+    background-color: #212121;
+}
+
+#search_idee, #icon-search-idee {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  height: 1.5em;
+  border: none;
+  margin: 0;
+}
+#search_idee {
+  width: 90%;
+  color: white;
+  font-family: arial;
+  font-size: 1em;
+}
+
+#icon-search-idee {
+  width: 10%;
+  font-size: 1.5em;
+  color: #6E0505;
+}
+
+#Switch {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2em;
+  width: 40em;
+}
+
+.Choix {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: solid #6E0505 1px;
+  padding: 1em 3em;
+  color: white;
+  background-color: #313131;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: '33535gillsansmt' !important;
+}
+
+.Bloc_Idee {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  width: 25em;
+}
+
+.Vote {
+  width: 4em;
+  margin-top: 1em;
+}
+
+.Nombre {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: Gameplay;
+  background-color: #212121;
+  color: white;
+  height: 2.5em;
+  width: 2.5em;
+  font-size: 1.5em;
+  border: 2px solid #6E0505;
+  margin: 0;
+}
+
+.Action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Action_utilisateur {
+  display: flex;
+  flex-direction: row;
+  color: #212121;
+  font-family: arial;
+}
+
+.Ajout, .Retrait {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #313131;
+  font-size: 1.5em;
+  width: 50%;
+}
+
+.Ajout {
+  color: #00BA35;
+  border: solid #00BA35 1px;
+}
+
+.Retrait {
+  color: #135A87;
+  border: solid #135A87 1px;
+}
+
+.Contenu {
+  margin-left: 1em;
+  width: 15em;
+}
+
+.Contenu h2 {
+    font-family: '33535gillsansmt' !important;
+    color: #313131;
+    font-size: 1.5em;
+}
+
+.Vote_contenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.Commentaire {
+  font-size: 1em;
+  margin-right: 8em;
+}
+
+.Signalement {
+  font-size: 1em;
+}
+
+.Comment {
+  word-wrap: break-word;
+  font-family: arial;
+  color: white;
+}
+
+.Bloc_Idee hr {
+  border: solid #212121 1px;
+  width: 100%;
+}

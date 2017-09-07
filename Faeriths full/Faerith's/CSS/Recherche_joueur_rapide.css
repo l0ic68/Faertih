@@ -1,0 +1,105 @@
+#Nom_jeu, #Nombre_joueur, #Niveau_recquis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 2em;
+  width: 20%;
+}
+
+#Button {
+  width: 4em;
+  height: 2em;
+}
+
+.Recherche_rapide {
+  display: flex;
+  flex-direction: column;
+}
+
+.Recherche_tool {
+  display: flex;
+  flex-direction: column;
+}
+
+.Fleche_gauche {
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.Espace {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+    flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.Bouton_ok {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.Recherche_result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10em;
+}
+
+.Recherche_result img {
+  margin-top: 1em;
+}
+
+.Ligne_verticale {
+  display: flex;
+  flex-direction: row;
+  border-right: 2px solid black;
+}
+
+.Ready {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.Texte_plein {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.Image_discord {
+  display: flex;
+  flex-direction: row;
+  height: 5em;
+  width: auto;
+}
+
+
+/* Pour les écrans inférieurs à 1024px de large */
+@media screen and (max-width: 1024px)
+{
+
+  #Nom_jeu, #Nombre_joueur, #Niveau_recquis {
+    margin-top: 2%;
+    width: 80%;
+  }
+
+  .Recherche_result {
+    margin-top: 5em;
+  }
+
+  .Ligne_verticale {
+    display: none;
+  }
+}

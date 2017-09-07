@@ -1,0 +1,15 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Cms_poster_article.css') }}"/>
+{% endblock %}
+{% block body %}
+   {{ form_start(form) }}
+    {#{{ form_widget(form.titre) }}#}
+    {#{{ form_widget(form.contenu) }}#}
+    {#{{ form_widget(form.tag) }}#}
+   {{ form_end(form) }}
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset ('ckeditor/ckeditor.js') }}"></script>
+{% endblock %}
+

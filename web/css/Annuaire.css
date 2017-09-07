@@ -1,0 +1,130 @@
+#Total {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Annuaire_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  height: 16em;
+  border: 2px solid #6e0505;
+  background-color: #313131;
+  margin-top: 5em;
+}
+
+.Annuaire_box a {
+  text-decoration: none;
+}
+
+.Title {
+  color: #135A87;
+  font-family: '33535gillsansmt' !important;
+}
+
+.Description {
+  color: white;
+  font-family: Arial;
+  width: 95%;
+}
+
+.Annuaire_box span {
+  margin-top: 0.5em;
+  font-size: 4em;
+}
+
+@media screen and (max-width: 1024px)
+{
+  #Total {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0em;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+
+  .Annuaire_Box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Annuaire_equipe {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Creation_equipe {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Recherche_joueur_rapide {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Recherche_joueur {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Deposer_recherche_joueur {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Title {
+    display: flex;
+    background-color: grey;
+    border: 0px solid black;
+    border-bottom: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-top: 0;
+  }
+
+  .Texte {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+    height: 7em;
+    margin-bottom: 2em;
+  }
+
+  .Description {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0em;
+  }
+}

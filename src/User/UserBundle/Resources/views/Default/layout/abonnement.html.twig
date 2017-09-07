@@ -1,0 +1,43 @@
+<div id="A_propos">
+    <h2 id="Pseudo_titre">A PROPOS DES AUTEURS</h2>
+    {% for auteur in article.auteur %}
+        <div id="Ligne_pseudo">
+            <img src="{{ asset( auteur.media.path ) }}" alt="#" id="Profil_auteur">
+            <h2 id="Pseudo_auteur">{{ auteur.username }}</h2>
+        </div>
+        <p id="Pseudo_texte">{{ auteur.description }}</p>
+        {% if app.user != null %}
+            {% if abonnes[auteur.username] != 'true' %}
+                <button class="Bouton_abonnement" id="{{ auteur.id }}">ABONNEMENT</button>
+            {% else %}
+                <p>Vous êtes déja abonnée à cette auteur</p>
+            {% endif %}
+        {% else %}
+            <p>Vous devez être connecté pour vous abonnez</p>
+        {% endif %}
+    {% endfor %}
+</div>
+{% block javascripts %}
+<script type="text/javascript">
+    $(function(){
+        $('.Bouton_abonnement').on('click', function()
+        {
+            var id_art = {{article.id}}
+            var id = $(this).attr("id");
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "{{ path('abonnement') }}",
+                cache: false,
+                data: { id: id ,id_art:id_art},
+                success:function(response){
+                    $('#A_propos').replaceWith(response.classifiedList);
+                },
+                error:function(response){
+                    console.log(response);
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

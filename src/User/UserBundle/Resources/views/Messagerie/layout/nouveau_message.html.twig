@@ -1,0 +1,39 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Nouveau_message.css') }}"/>
+{% endblock %}
+{% block body %}
+    {#<section id="Ensemble">#}
+        {#<a href="Boite_reception.html" id="Fleche"><img src="../Images/Icones/arrow_left.png" alt="Icone flèche retour"></a>#}
+        {#<form id="Nouveau_message">#}
+            {#{{ form_start(form) }}#}
+            {#<fieldset>#}
+                {#<div id="Dest">#}
+                    {#<div id="Dest_label">#}
+                        {#<label for="destinataire">A :</label>#}
+                    {#</div>#}
+                    {#{{ form_widget(form.destinataire) }}#}
+                {#</div>#}
+                {#<div id="Obj">#}
+                    {#<div id="Obj_label">#}
+                        {#<label for="objet">Objet :</label>#}
+                    {#</div>#}
+                    {#{{ form_widget(form.objet) }}#}
+                {#</div>#}
+                {#<div id="Msg">#}
+                    {#<div id="Msg_label">#}
+                        {#<label for="message">Message :</label>#}
+                    {#</div>#}
+                    {#{{ form_widget(form.message) }}#}
+                {#</div>#}
+                {#<div id="Envoi_content">#}
+                    {#{{ form_widget(form.submit) }}#}
+                {#</div>#}
+            {#</fieldset>#}
+            {#{{ form_end(form) }}#}
+        {#</form>#}
+    {#</section>#}
+    {{ form_start(form) }}
+    {{ form_end(form) }}
+{% endblock %}
+

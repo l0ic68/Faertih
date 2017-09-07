@@ -1,0 +1,65 @@
+index:
+    path:     /
+    defaults: { _controller: MainBundle:Default:index }
+
+a_propos:
+    path:     /A_propos
+    defaults: { _controller: MainBundle:Default:a_propos }
+
+don:
+    path:     /Don
+    defaults: { _controller: MainBundle:Default:don }
+
+donUser:
+    path:     /DonUser
+    defaults: { _controller: MainBundle:Default:donuser }
+
+contact:
+    path:     /contact
+    defaults: { _controller: MainBundle:Default:contact }
+    requirements:
+            _method:  GET|POST
+
+search:
+    path:     /search
+    defaults: { _controller: MainBundle:Search:searchTreat }
+
+searchArticle:
+    path:     /searchArticle
+    defaults: { _controller: MainBundle:Article:searcharticle }
+
+event:
+    path:     /event
+    defaults: { _controller: MainBundle:Event:event }
+
+forum:
+    path:     /forum
+    defaults: { _controller: MainBundle:Forum:forum }
+
+promote:
+    path:     /promote/{id}
+    defaults: { _controller: MainBundle:Default:promote }
+
+lecture_article:
+    path:     /article/{id}
+    defaults: { _controller: MainBundle:Article:lecturearticle }
+
+articles:
+    path:     /articles
+    defaults: { _controller: MainBundle:Article:articles }
+
+serveurs:
+    path:     /serveurs
+    defaults: { _controller: MainBundle:Serveur:serveurs }
+
+commentArticle:
+    path:     /commentArticle
+    defaults: { _controller: MainBundle:Article:comment }
+
+newArticle:
+    path:     /new_article
+    defaults: { _controller: MainBundle:Article:newarticle }
+
+lecture_video:
+    path:     /video/{id}
+    defaults: { _controller: MainBundle:Article:lecturearticle }

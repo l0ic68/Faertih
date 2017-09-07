@@ -1,0 +1,136 @@
+#Ressources_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Ressources_Box {
+  width: 45%;
+}
+
+.Title {
+  color: white;
+  font-family: '33535gillsansmt' !important;
+  font-weight: normal;
+}
+
+.Ressources_Lines {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.Ressources_Logo {
+  width: 10em;
+  height: 10em;
+  margin-left: 1em;
+}
+
+.Ressources_Wallpaper {
+  width: 15em;
+  height: 10em;
+  margin-left: 1em;
+}
+
+#Color_Box_RG {
+ width: 11em;
+ height: 11em;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-color: #6E0505;
+ color: white;
+ font-family: Arial;
+}
+
+#Color_Box_RC {
+ width: 11em;
+ height: 11em;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-color: #BA0808;
+ color: white;
+  margin-left: 1em;
+  font-family: Arial;
+}
+
+#Color_Box_VC {
+ width: 11em;
+ height: 11em;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-color: #00BA35;
+ color: white;
+  margin-left: 1em;
+  font-family: Arial;
+}
+
+#Color_Box_B {
+ width: 11em;
+ height: 11em;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-color: #135A97;
+ color: white;
+ margin-top: 1em;
+ font-family: Arial;
+}
+
+#Color_Box_GF {
+ width: 11em;
+ height: 11em;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-color: #212121;
+ color: white;
+  margin-left: 1em;
+  margin-top: 1em;
+  font-family: Arial;
+}
+
+#Color_Box_G {
+ width: 11em;
+ height: 11em;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-color: #313131;
+ color: white;
+  margin-left: 1em;
+  margin-top: 1em;
+  font-family: Arial;
+}
+
+#Color_Box_GC {
+ width: 11em;
+ height: 11em;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-color: #444850;
+ border: solid black 1px;
+ color: white;
+ margin-top: 1em;
+ font-family: Arial;
+}
+
+#Ressources_Gameplay {
+  color: white;
+  font-family: Gameplay;
+}
+
+#Ressources_Gill {
+  color: white;
+  font-family: '33535gillsansmt' !important;
+}
+
+#Ressources_Arial {
+  color: white;
+  font-family: Arial;
+}

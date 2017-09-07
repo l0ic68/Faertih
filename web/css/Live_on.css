@@ -1,0 +1,185 @@
+#Chat {
+  height: 100vh;
+}
+
+#Bouton_chat {
+  width: 50%;
+}
+
+#Bouton_planning {
+  width: 50%;
+}
+
+#Trait {
+  border: 2px solid black;
+  width: 100%;
+}
+
+.Principal {
+  display: flex;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+
+.Titre {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Title {
+  display: flex;
+  font-size: 1.2em;
+  font-weight: normal;
+  width: 80%;
+}
+
+.Plage_horaire{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.Fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.Bouton {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Info_planning {
+  display: none;
+}
+
+.Chat {
+  height: 100vh;
+  border: 0px solid black;
+}
+
+.Centre_player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50em;
+}
+
+.Player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.Streamer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 0.5em;
+}
+
+.Image_pic {
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.Image_profil {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.Streamer_info {
+  display: flex;
+  flex-direction: column;;
+  width: 20%;
+  border: 1px solid black;
+  justify-content: center;
+}
+
+.Pseudal {
+  font-size: 1em;
+  margin: 0;
+}
+
+.Nom_jeu {
+  font-size: 1em;
+  margin: 0;
+}
+
+.Social_user {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.Img_social {
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0.5em;
+}
+
+.Action {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  border: 1px solid black;
+  justify-content: center;
+}
+
+.Suivre {
+  margin: 2%;
+}
+
+.Abonnement {
+  margin: 2%;
+}
+
+.Don {
+  margin: 2%;
+}
+
+.VOD {
+  border: 1px solid black;
+}
+
+.VOD_titre {
+
+}
+
+.VOD_all {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid black;
+  flex-wrap: wrap;
+}
+
+.Lien_img {
+  
+}
+
+.VOD_pic {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  margin: 1em;
+}

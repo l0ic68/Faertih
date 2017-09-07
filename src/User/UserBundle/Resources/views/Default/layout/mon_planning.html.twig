@@ -1,0 +1,139 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Mon_planning.css') }}"/>
+{% endblock %}
+{% block body %}
+<section id="Mon_planning">
+    <div id="Haut">
+        <h1 id="Mon_Titre">Mon Planning |</h1>
+        <div id="Planning_complet">
+            <a href="Planning.html"><i class="fa fa-calendar-o fa-2x"></i>Planning Complet</a>
+        </div>
+    </div>
+
+    <div id="Mon_planning_content">
+
+        <div id="Mon_planning_prochaine">
+            <h1 class="Gros_titre">PROCHAINES SORTIES</h1>
+            <div id="Selection_tard">
+                <p id="Texte_all">ALL</p>
+                <p class="Selection_icone"><i class="fa fa-youtube-play fa-2x Youtube_White"></i></p>
+                <p class="Selection_icone"><i class="fa fa-twitch fa-2x Twitch_White"></i></p>
+                <p class="Selection_icone"><i class="fa fa-pencil fa-2x Pencil_White"></i></p>
+            </div>
+            <div class="Mon_planning_prochaine_data">
+                <p class="Date">Vendredi 24 Septembre</p>
+                <div class="Prochain_row">
+                    <img src="http://via.placeholder.com/50x50" alt="Icone" class="Image_profil">
+                    <p class="Horaire">18:00 - 20:00</p>
+                    <h1 class="Name_game">Nom du jeu</h1>
+                    <i class="fa fa-twitch fa-2x Twitch_icone"></i>
+                    <i class="fa fa-times fa-2x Cross_icone"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="Mon_planning_a_regarder">
+            <h1 class="Gros_titre">A REGARDER PLUS TARD</h1>
+            <div id="Selection_tard">
+                <button class="tri" value="All" id="Texte_all">ALL</button>
+                <button value="Video" class="Selection_icone tri"><i class="fa fa-youtube-play fa-2x Youtube_White"></i></button>
+                <button value="Twitch" class="Selection_icone tri"><i class="fa fa-twitch fa-2x Twitch_White"></i></button>
+                <button value="Article" class="Selection_icone tri"><i class="fa fa-pencil fa-2x Pencil_White"></i></button>
+            </div>
+            <div id="trie_planning">
+                {% if not user.later.empty %}
+                    {% for later in user.later %}
+                        {% if later.article is empty %}
+                            <div class="Mon_planning_a_regarder_data">
+                                <div class="Prochain_row">
+                                    <a href="{{ path('lecture_video',{id: later.video.id}) }}">
+                                        <img src="{{ asset(later.video.miniature.path) }}" alt="#" class="Img_regarder">
+                                    </a>
+                                    <h1 class="Contenu">{{ later.video.titre }}</h1>
+                                    <i class="fa fa-youtube-play fa-2x Youtube_Play"></i>
+                                    <i class="fa fa-times fa-2x Cross_icone delete" id="{{ later.video.id}} video"></i>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="Mon_planning_a_regarder_data">
+                                <div class="Prochain_row">
+                                    <a href="{{ path('lecture_article',{id: later.article.id}) }}">
+                                        <img src="{{ asset(later.article.miniature.path) }}" alt="#" class="Img_regarder">
+                                    </a>
+                                    <h1 class="Contenu">{{ later.article.titre }}</h1>
+                                    <i class="fa fa-pencil fa-2x Pencil_icone"></i>
+                                    <i class="fa fa-times fa-2x Cross_icone delete" id="{{ later.article.id}} article"></i>
+                                </div>
+                            </div>
+                            {#<i class="fa fa-twitch fa-2x Twitch_icone"></i>#}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div id="Mon_planning_event">
+            <h1 class="Gros_titre">EVENT A VENIR</h1>
+            <div id="Selection_tard">
+                <select id="Event_recherche">
+                    <option>TOUS</option>
+                </select>
+            </div>
+            <div class="Mon_planning_event_data">
+                <p class="Date">Vendredi 24 Septembre</p>
+                <div class="Event_row">
+                    <p class="Event_horaire">18:00 - 20:00</p>
+                    <h1 class="Event_nom">Nom de l'événement</h1>
+                    <i class="fa fa-times fa-2x Cross_icone"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    {% block javascripts %}
+        <script type="text/javascript">
+            $(function () {
+                $('.tri').on('click', function () {
+                    var value = $(this).val();
+                    $.ajax({
+                        type: "GET",
+                        dataType: "json",
+                        url: "{{ path('tri_later_planning') }}",
+                        cache: false,
+                        data: {value: value},
+                        success: function (response) {
+                            $('#trie_planning').replaceWith(response.classifiedList);
+                        },
+                        error: function (response) {
+                            console.log(response);
+                        }
+                    });
+                });
+            });
+        </script>
+
+        <script type="text/javascript">
+            $(function () {
+                $('.delete').on('click', function () {
+                    var id = $(this).attr("id");
+                    $.ajax({
+                        type: "GET",
+                        dataType: "json",
+                        url: "{{ path('remove_later_planning') }}",
+                        cache: false,
+                        data: {id: id},
+                        success: function (response) {
+                            $('#trie_planning').replaceWith(response.classifiedList);
+                        },
+                        error: function (response) {
+                            console.log(response);
+                        }
+                    });
+                });
+            });
+        </script>
+
+    {% endblock %}
+{% endblock %}

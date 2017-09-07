@@ -1,0 +1,86 @@
+fieldset {
+  width: 55%;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #6E0505;
+  background-color: #313131;
+}
+
+#Centre {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Centre label {
+  font-family: '33535gillsansmt' !important;
+  color: white;
+}
+
+#Centre input, #Centre select, #Centre textarea {
+    background-color: #212121;
+    font-family: arial;
+    color: white;
+    border: none;
+}
+
+#Centre p {
+    font-family: arial;
+    color: white;
+    font-size: 0.7em;
+}
+
+#Centre #Envoyer {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  border: 2px solid #6E0505;
+  justify-content: center;
+  align-items: center;
+  color: #135A87;
+  font-size: 1em;
+}
+
+.Important {
+  color: red;
+}
+.Espace {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+@media screen and (max-width: 1024px)
+{
+
+  fieldset {
+    width: 90%;
+    margin-top: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+  }
+
+  #Envoyer {
+    display: flex;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Centre {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

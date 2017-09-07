@@ -1,0 +1,6 @@
+services:
+    main.type.tags:
+        class: Main\MainBundle\Form\TagType
+        arguments: ["@doctrine.orm.entity_manager"]
+        tags:
+            - { name: form.type, alias: tags }

@@ -1,0 +1,29 @@
+<div id="Profil_all">
+    {% for admin in role_admin %}
+        <img src="{{asset(admin.media.path) }}" alt="#" class="Profil_pic" id="{{ admin.id }}">
+    {% endfor %}
+</div>
+
+{% block javascripts %}
+<script type="text/javascript">
+    $(function(){
+        $('.Profil_pic').on('click', function()
+        {
+            var id = $(this).attr("id");
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "{{ path('description_equipe') }}",
+                cache: false,
+                data: { id: id },
+                success:function(response){
+                    $('#Equipe_detail').replaceWith(response.classifiedList);
+                },
+                error:function(response){
+                    console.log(response);
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Annuaire_membre.css') }}"/>
+{% endblock %}
+{% block body %}
+    <section>
+        <a href="{{ path('annuaire') }}"><img src="../Images/Icones/arrow_left.png" alt="Icone flèche retour" id="Fleche"></a>
+        <div class="Milieu">
+            <input name="search" type="search" class="Recherche">
+            <div class="Annuaire_membre_data">
+                <div id="Pseudo_top">
+                    <p>Pseudo</p>
+                </div>
+                <div id="Categorie_top">
+                    <p>Categorie</p>
+                </div>
+                <div id="Contact_top">
+                    <p>Contacter</p>
+                </div>
+                <div id="ID_Discord_top">
+                    <p>ID Discord</p>
+                </div>
+                <div id="Equipe_top">
+                    <p>equipe</p>
+                </div>
+            </div>
+            {% for user in users %}
+            <div class="Annuaire_membre_data">
+                <div class="Pseudo">
+                    <img src="http://placehold.it/25x25" alt="Online" class="On">
+                    <img src="{{ asset(user.media.path) }}" alt="Profil" class="Img_profil">
+                    <p>{{ user.username }}</p>
+                </div>
+                <div class="Categorie">
+                    {#{{ user.roles }}#}
+                </div>
+                <div class="Contact">
+                    <a href="{{ path('nouveau_message') }}"><p>Contacter</p></a>
+                </div>
+                <div class="ID_Discord">
+                    {% if  user.social.discord is not null %}
+                    {{ user.social.discord }}
+                    {% endif %}
+                </div>
+                <div class="Equipe">
+                    {% if not user.team.empty %}
+                    {% for team in user.team %}
+                    <img src="{{ asset(team.logoteam.path) }}" alt="Equipe" class="Img_Equipe">
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </section>
+{% endblock %}
+

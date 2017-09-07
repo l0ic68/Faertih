@@ -1,0 +1,101 @@
+#Haut {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 15em;
+  border-bottom: solid black 1px;
+}
+
+
+#Bloc_Gauche {
+  width: 42%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Baniere_Createur {
+  width: 35em;
+  height: 10em;
+}
+
+#Pseudo_don {
+  display: flex;
+  cursor:pointer;
+  width: 33.5em;
+  height: 2em;
+  margin-top: 0.5em;
+  background-color: #212121;
+  font-family: '33535gillsansmt' !important;
+  font-size: 1.05em;
+  color: #BA0808;
+  border: none;
+  border-radius: 10px;
+}
+
+#Bloc_droit {
+  width: 58%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Texte_pres {
+  text-align: justify;
+  font-family: '33535gillsansmt' !important;
+  color: white;
+  width: 90%;
+}
+
+#Section_don {
+  width: 100%;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.don_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22%;
+  height: 25em;
+  background-color: #313131;
+  border: solid 2px #6e0505;
+}
+
+.Separation {
+  width: 95%;
+  border: solid black 1px;
+}
+
+.Blabla {
+  font-family: '33535gillsansmt' !important;
+  color: white;
+  width: 90%;
+}
+
+.Separation2 {
+  width: 80%;
+  border: solid black 1px;
+}
+
+.bouton-relief {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: solid black 1px;
+  color: white;
+  font-size: 1.25em;
+  font-family: Gameplay;
+  background-color: #BA0808;
+  width: 70%;
+  height: 2em;
+}

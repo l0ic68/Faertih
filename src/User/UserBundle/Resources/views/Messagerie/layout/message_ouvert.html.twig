@@ -1,0 +1,14 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Nouveau_message.css') }}"/>
+{% endblock %}
+{% block body %}
+    <section>
+        <a href="{{ path('boite_reception') }}"><button>Retour</button></a>
+<h1>Auteur: {{ message.expediteur }}</h1>
+<h2>Objet : {{ message.objet }}</h2>
+<h3>Date : {{ message.date|date() }}</h3>
+<p> Message : {{ message.message }}</p>
+    </section>
+{% endblock %}
+

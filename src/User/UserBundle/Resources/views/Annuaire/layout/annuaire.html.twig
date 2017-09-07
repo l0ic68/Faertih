@@ -1,0 +1,41 @@
+{% extends "::layout/layout.html.twig" %}
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/Annuaire.css') }}"/>
+{% endblock %}
+{% block body %}
+    <!-- CONTENU -->
+    <section id="Total">
+        <div class="Annuaire_box">
+            <a href="{{ path('annuaire_membres') }}"><h1 class="Title">Annuaire des Membres</h1></a>
+            <p class="Description">Retrouver L'integralité de la communauté Faerith's dans l'annuaire des membres.</p>
+            <span class="icon-user"></span>
+        </div>
+        <div class="Annuaire_box">
+            <a href="{{ path('annuaire_equipe') }}"><h1 class="Title">Annuaire des Equipes</h1></a>
+            <p class="Description">Retrouver L'integralité des équipes de la communauté Faerith's dans l'annuaire des équipes.</p>
+            <span class="icon-group"></span>
+        </div>
+        <div class="Annuaire_box">
+            <a href="{{ path('creation_equipe') }}"><h1 class="Title">Créer votre Team</h1></a>
+            <p class="Description">Créer votre équipe et affronter en d'autres lors d'événements organisés par la communauté.</p>
+            <span class="icon-user-plus"></span>
+        </div>
+        <div class="Annuaire_box">
+            <a href="Recherche_joueur_rapide.html"><h1 class="Title">Recherche de Joueurs Rapide</h1></a>
+            <p class="Description">Rechercher rapidement des coéquipiers pour votre prochaine game.</p>
+            <span class="icon-chain"></span>
+        </div>
+        <div class="Annuaire_box">
+            <a href="Recherche_joueur.html"><h1 class="Title">Recherche de Joueurs</h1></a>
+            <p class="Description">Planifier vos prochaine sessions de jeux en rejoignant les sessions d'autres joueurs.</p>
+            <span class="icon-gamepad"></span>
+        </div>
+        <div class="Annuaire_box">
+            <a href="Deposer_recherche_joueur.html"><h1 class="Title">Déposer une recherche de joueurs</h1></a>
+            <p class="Description">Planifier une prochaine session de jeux en créant une demande.</p>
+            <span class="icon-arrows-alt"></span>
+        </div>
+    </section>
+
+{% endblock %}
+
